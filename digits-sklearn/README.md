@@ -16,7 +16,7 @@ The original experiment is composed by four steps:
 The confusion matrix is written to standard output as:
 
     Confusion matrix:
-     [[87  0  0  0  1  0  0  0  0  0]
+    [[87  0  0  0  1  0  0  0  0  0]
      [ 0 88  1  0  0  0  0  0  1  1]
      [ 0  0 85  1  0  0  0  0  0  0]
      [ 0  0  0 79  0  3  0  4  5  0]
