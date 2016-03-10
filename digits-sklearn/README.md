@@ -13,17 +13,17 @@ The original experiment is composed by four steps:
 3. [Prediction](03_predict.py): the SVM classifier is tested using the test set.
 4. [Confusion Matrix](04_confusion_matrix.py): a confusion matrix is created using the prediction data, and it is written to standard output as:
 
-    Confusion matrix:
-    [[87  0  0  0  1  0  0  0  0  0]
-     [ 0 88  1  0  0  0  0  0  1  1]
-     [ 0  0 85  1  0  0  0  0  0  0]
-     [ 0  0  0 79  0  3  0  4  5  0]
-     [ 0  0  0  0 88  0  0  0  0  4]
-     [ 0  0  0  0  0 88  1  0  0  2]
-     [ 0  1  0  0  0  0 90  0  0  0]
-     [ 0  0  0  0  0  1  0 88  0  0]
-     [ 0  0  0  0  0  0  0  0 88  0]
-     [ 0  0  0  1  0  1  0  0  0 90]]
+    $ Confusion matrix:
+    $  [[87  0  0  0  1  0  0  0  0  0]
+    $  [ 0 88  1  0  0  0  0  0  1  1]
+    $  [ 0  0 85  1  0  0  0  0  0  0]
+    $  [ 0  0  0 79  0  3  0  4  5  0]
+    $  [ 0  0  0  0 88  0  0  0  0  4]
+    $  [ 0  0  0  0  0 88  1  0  0  2]
+    $  [ 0  1  0  0  0  0 90  0  0  0]
+    $  [ 0  0  0  0  0  1  0 88  0  0]
+    $  [ 0  0  0  0  0  0  0  0 88  0]
+    $  [ 0  0  0  1  0  1  0  0  0 90]]
 
 To run this experiment without ReproZip, you will need to install [scikit-learn](http://scikit-learn.org/) and run each script with Python, in the aforementioned order.
 
