@@ -37,7 +37,16 @@ The ReproZip package is available [here](https://nyu.box.com/shared/static/2101v
 How to Reproduce
 ----------------
 
-The experiment can be reproduced as follows:
+All the steps of the experiment can be reproduced as follows:
 
     $ reprounzip vagrant setup digits_sklearn.rpz digits/
     $ reprounzip vagrant run digits/
+
+Optionally, you can also reproduce each step individually:
+
+    $ reprounzip vagrant run digits/ get_data
+    $ reprounzip vagrant run digits/ build_classifier
+    $ reprounzip vagrant run digits/ predict
+    $ reprounzip vagrant run digits/ evaluate
+    
+Recall that ReproZip automatically generates a [VisTrails](http://www.vistrails.org/) workflow for the experiment given that [reprounzip-vistrails](http://reprozip.readthedocs.org/en/stable/vistrails.html) is installed. You can replace it (under `digits/vistrails.vt`) with the [one](digits_sklearn.vt) we provide here to see how the workflow can be extended to enhance the reproducibility experience.
