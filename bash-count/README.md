@@ -25,8 +25,8 @@ How to Reproduce
 
 The example can be reproduced as follows:
 
-    $ reprounzip vagrant setup bash-count.rpz bash-count
-    $ reprounzip vagrant run bash-count
+    $ reprounzip vagrant setup bash-count.rpz bash-count/
+    $ reprounzip vagrant run bash-count/
     
 This example, although very simple, has many dependencies, as can be seen from its [dataflow](graph.png). To generate the same dataflow:
 

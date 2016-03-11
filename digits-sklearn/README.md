@@ -39,5 +39,5 @@ How to Reproduce
 
 The experiment can be reproduced as follows:
 
-    $ reprounzip docker setup digits-sklearn.rpz digits
-    $ reprounzip docker run digits
+    $ reprounzip docker setup digits-sklearn.rpz digits/
+    $ reprounzip docker run digits/
