@@ -39,5 +39,5 @@ How to Reproduce
 
 The experiment can be reproduced as follows:
 
-    $ reprounzip vagrant setup digits-sklearn.rpz digits/
+    $ reprounzip vagrant setup digits_sklearn.rpz digits/
     $ reprounzip vagrant run digits/
