@@ -32,12 +32,12 @@ To run this experiment without ReproZip, you will need to install [scikit-learn]
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/shared/static/2101vi9wb0md3vo3kra1xjft3unnznsu.rpz) (20 MB).
+The ReproZip package is available [here](https://nyu.box.com/shared/static/2101vi9wb0md3vo3kra1xjft3unnznsu.rpz) (20.0 MB).
 
 How to Reproduce
 ----------------
 
 The experiment can be reproduced as follows:
 
-    $ reprounzip docker setup digits-sklearn.rpz digits/
-    $ reprounzip docker run digits/
+    $ reprounzip vagrant setup digits-sklearn.rpz digits/
+    $ reprounzip vagrant run digits/
