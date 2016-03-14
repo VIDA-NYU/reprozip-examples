@@ -51,7 +51,7 @@ Optionally, you can also reproduce each step individually:
     
 **_The VisTrails Workflow_**
     
-The digits-sklearn experiment is a great example of how you can easily extend the original pipeline to further analyse the results, or even reuse it in your own research.
+The digits-sklearn experiment is a great example of how you can easily extend the original pipeline to further analyze the results, or even reuse it in your own research.
 
 Recall that ReproZip automatically generates a [VisTrails](http://www.vistrails.org/) workflow for the experiment given that [reprounzip-vistrails](http://reprozip.readthedocs.org/en/stable/vistrails.html) is installed. This workflow is located under `digits/vistrails.vt`.
 
