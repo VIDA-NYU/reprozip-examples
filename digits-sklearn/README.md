@@ -49,4 +49,10 @@ Optionally, you can also reproduce each step individually:
     $ reprounzip vagrant run digits/ predict
     $ reprounzip vagrant run digits/ evaluate
     
-Recall that ReproZip automatically generates a [VisTrails](http://www.vistrails.org/) workflow for the experiment given that [reprounzip-vistrails](http://reprozip.readthedocs.org/en/stable/vistrails.html) is installed. You can replace it (under `digits/vistrails.vt`) with the [one](digits_sklearn.vt) we provide here to see how the workflow can be extended to enhance the reproducibility experience.
+**_The VisTrails Workflow_**
+    
+The digits-sklearn experiment is a great example of how you can easily extend the original pipeline to further analyse the results, or even reuse it in your own research.
+
+Recall that ReproZip automatically generates a [VisTrails](http://www.vistrails.org/) workflow for the experiment given that [reprounzip-vistrails](http://reprozip.readthedocs.org/en/stable/vistrails.html) is installed. This workflow is located under `digits/vistrails.vt`.
+
+You can replace it with the one we provide [here](digits_sklearn.vt) to see how the workflow can be extended to enhance the reproducibility experience. After opening it, replace the value of the *directory* parameter (from module *Directory*) with the full path of `digits/`, and then run the workflow by pressing *Execute*. You will see that the workflow was extended to provide visualization for the predictions and the confusion matrix.
