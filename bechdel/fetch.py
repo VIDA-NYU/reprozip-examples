@@ -6,12 +6,15 @@ import csv
 import requests
 
 
+print("Getting revenue data from the-numbers.com...")
+
 # Revenue data taken from scraping http://www.the-numbers.com/movies/#tab=letter
 revenue_df_list = list()
 
 for character in string.printable[1:36]:
-    print('http://www.the-numbers.com/movies/letter/{0}'.format(character))
-    soup = BeautifulSoup(requests.get('http://www.the-numbers.com/movies/letter/{0}'.format(character)).text)
+    url = 'http://www.the-numbers.com/movies/letter/{0}'.format(character)
+    print("  %s" % url)
+    soup = BeautifulSoup(requests.get(url).text, 'html5lib')
     archive = pd.read_html(soup.findAll('table')[0].encode('latin1'),header=0,flavor='bs4')[0]
     archive.columns = ['Released','Movie','Genre','Budget','Revenue','Trailer']
     archive['Released'] = pd.to_datetime(archive['Released'],format=u"%b\xa0%d,\xa0%Y",coerce=True)
@@ -26,6 +29,8 @@ numbers_df = pd.concat(revenue_df_list)
 numbers_df.reset_index(inplace=True,drop=True)
 numbers_df.to_csv('revenue.csv',encoding='utf8')
 
+
+print("Getting inflation data from bls.gov...")
 
 # Inflation data from BLS, http://www.bls.gov/developers/home.htm
 years = {}
@@ -47,17 +52,19 @@ with open('cpi.csv', 'wb') as fp:
         writer.writerow([year, years[year]])
 
 
+print("Getting Bechdel Test data from bechdeltest.com...")
+
 # Bechdel Test data from BechdelTest.com's API
 # Documentation here: http://bechdeltest.com/api/v1/doc#getMovieByImdbId
 movie_ids = requests.get('http://bechdeltest.com/api/v1/getAllMovieIds').json()
 imdb_ids = [movie[u'imdbid'] for movie in movie_ids]
-print u"There are {0} movies in the Bechdel test corpus".format(len(imdb_ids))
+print("There are {0} movies in the Bechdel test corpus".format(len(imdb_ids)))
 
 ratings = dict()
 exceptions = list()
 for num, imdb_id in enumerate(imdb_ids):
     if num % 200 == 0:
-        print imdb_id
+        print("  got %d" % num)
     try:
         ratings[imdb_id] = requests.get('http://bechdeltest.com/api/v1/getMovieByImdbId?imdbid={0}'.format(imdb_id)).json()
     except Exception:
@@ -68,12 +75,14 @@ with open('bechdel.json', 'wb') as f:
     json.dump(ratings.values(), f)
 
 
+print("Getting data from OMDBAPI...")
+
 # Additional data from OMDBAPI
 imdb_data = dict()
 exceptions = list()
 for num, imdb_id in enumerate(imdb_ids):
     if num % 200 == 0:
-        print imdb_id
+        print("  got %d" % num)
     try:
         imdb_data[imdb_id] = requests.get('http://www.omdbapi.com/?i=tt{0}'.format(imdb_id)).json()
     except Exception:
