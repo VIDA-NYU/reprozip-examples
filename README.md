@@ -1,18 +1,29 @@
 ReproZip Examples
 =================
 
-This repository holds some examples and demos from different domains that showcase [the ReproZip software packing tool](https://vida-nyu.github.io/reprozip/).
+This repository holds some examples and use cases from different domains that showcase [the ReproZip software packing tool](https://vida-nyu.github.io/reprozip/).
 
-You'll find more info about each particular example in its associated README.
+You'll find more information about each particular example in its associated README.
 
 Examples
 --------
 
-* [bash-count](bash-count): A simple bash script that makes for an interesting graph, since each command is a separate process.
-* [digits-sklearn](digits-sklearn): A supervised learning and classification experiment written in Python, using [scikit-learn](http://scikit-learn.org/).
-* [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
-* [bechdel](bechdel): Tries to reproduce results from the Bechdel test with data from IMDB and other open APIs
+*Creating a provenance graph*
+
+* [bash-count](bash-count): A simple bash script that counts the number of pages of an input file.
+
+*Reproducing published results*
+
+* [bechdel-test](bechdel-test): A data analysis experiment that tries to reproduce the claims of an [article](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) from FiveThirtyEight.
 * [ising-model](ising-model): A typical simulation in statistical physics, consisting of large scale Monte Carlo simulations followed by an involved statistical analysis of the results.
+
+*Extending the original experiment in VisTrails*
+
+* [digits-sklearn](digits-sklearn): A supervised learning and classification experiment written in Python, using [scikit-learn](http://scikit-learn.org/).
+
+*Reproducing the experiment with a different input*
+
+* [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
 
 Instructions for reproducing the examples use the [vagrant unpacker](http://reprozip.readthedocs.org/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine). However, any of the [available unpackers](http://reprozip.readthedocs.org/en/stable/unpacking.html#unpackers) can be used.
 
