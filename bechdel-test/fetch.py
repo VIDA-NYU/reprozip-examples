@@ -17,7 +17,7 @@ for character in string.printable[1:36]:
     soup = BeautifulSoup(requests.get(url).text, 'html5lib')
     archive = pd.read_html(soup.findAll('table')[0].encode('latin1'),header=0,flavor='bs4')[0]
     archive.columns = ['Released','Movie','Genre','Budget','Revenue','Trailer']
-    archive['Released'] = pd.to_datetime(archive['Released'],format=u"%b\xa0%d,\xa0%Y",coerce=True)
+    archive['Released'] = pd.to_datetime(archive['Released'],format=u"%b\xa0%d,\xa0%Y",errors='coerce')
     archive = archive.replace([u'\xa0',u'nan'],[np.nan,np.nan])
     archive['Budget'] = archive['Budget'].dropna().astype('str').str.replace('$','').apply(lambda x:int(x.replace(',','')))
     archive['Revenue'] = archive['Revenue'].dropna().astype('str').str.replace('$','').apply(lambda x:int(x.replace(',','')))
@@ -36,7 +36,7 @@ print("Getting inflation data from bls.gov...")
 years = {}
 
 headers = {'Content-type': 'application/json'}
-for year in xrange(1913, 2014-9, 10):
+for year in xrange(1913, 2024-9, 10):
     data = json.dumps({"seriesid": ['CUUR0000SA0'], "startyear": "%d" % year, "endyear": "%d" % (year + 9)})
     p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
     json_data = json.loads(p.text)
