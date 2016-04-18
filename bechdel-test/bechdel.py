@@ -4,7 +4,7 @@ from itertools import product
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
+import statsmodels.formula.api as smf
 
 print("Loading data...")
 
@@ -108,7 +108,7 @@ df['ROI'] = df['Profit']/df['Adj_Budget']
 
 print("Plotting!")
 
-## Median Budget for Films
+## Budgets differ
 plt.figure(figsize=(8, 6), dpi=80)
 fig, ax = plt.subplots()
 ax.set_axis_bgcolor("#E0E0E0")
@@ -134,6 +134,12 @@ ax.set_axisbelow(True)
 
 plt.savefig('median_budget.png', bbox_inches='tight')
 plt.clf()
+
+bd_m = smf.ols(formula='np.log(Adj_Budget+1) ~ C(rating)', data=df).fit()
+print bd_m.summary()
+
+print "\n\nMovies passing every Bechdel dimension have budgets of ${:,} on average.".format(round(np.exp(bd_m.params['Intercept']+bd_m.params['C(rating)[T.3.0]']-1),2))
+print "Movies failing every Bechdel dimension have budgets of ${:,} on average.".format(round(np.exp(bd_m.params['Intercept']-1),2))
 
 ## Earnings differ (ROI)
 plt.figure(figsize=(8, 6), dpi=80)

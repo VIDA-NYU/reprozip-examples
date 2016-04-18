@@ -33,23 +33,23 @@ numbers_df.to_csv('revenue.csv',encoding='utf8')
 print("Getting inflation data from bls.gov...")
 
 # Inflation data from BLS, http://www.bls.gov/developers/home.htm
-years = {}
+#years = {}
 
-headers = {'Content-type': 'application/json'}
-for year in xrange(1913, 2024-9, 10):
-    data = json.dumps({"seriesid": ['CUUR0000SA0'], "startyear": "%d" % year, "endyear": "%d" % (year + 9)})
-    p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
-    json_data = json.loads(p.text)
+#headers = {'Content-type': 'application/json'}
+#for year in xrange(1913, 2024-9, 10):
+#    data = json.dumps({"seriesid": ['CUUR0000SA0'], "startyear": "%d" % year, "endyear": "%d" % (year + 9)})
+#    p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
+#    json_data = json.loads(p.text)
 
-    for e in json_data['Results']['series'][0]['data']:
-        if e['periodName'] == 'January':
-            years[int(e['year'])] = e['value']
+#    for e in json_data['Results']['series'][0]['data']:
+#        if e['periodName'] == 'January':
+#            years[int(e['year'])] = e['value']
 
-with open('cpi.csv', 'wb') as fp:
-    writer = csv.writer(fp)
-    writer.writerow(["Year", "Annual"])
-    for year in sorted(years.keys()):
-        writer.writerow([year, years[year]])
+#with open('cpi.csv', 'wb') as fp:
+#    writer = csv.writer(fp)
+#    writer.writerow(["Year", "Annual"])
+#    for year in sorted(years.keys()):
+#        writer.writerow([year, years[year]])
 
 
 print("Getting Bechdel Test data from bechdeltest.com...")

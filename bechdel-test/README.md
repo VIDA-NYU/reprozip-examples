@@ -1,7 +1,7 @@
 The Bechdel Test Article in FiveThirtyEight
 ===========================================
 
-This example is an attempt to replicate the findings from [an article in FiveThirtyEight](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) that examines gender bias in the movie business using the Bechdel test: a movie passes the Bechdel test if there are (1) two women in it, (2) who talk to each other, (3) about something besides a man. The data from this example is based on a [blog post](http://nbviewer.jupyter.org/github/brianckeegan/Bechdel/blob/master/Bechdel_test.ipynb) by Brian Keegan, which strongly advocates for reproducibility in data journalism.
+This example is an attempt to replicate the findings from [an article in FiveThirtyEight](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) that examines gender bias in the movie business using the Bechdel test: a movie passes the Bechdel test if there are (1) two named women in it, (2) who talk to each other, (3) about something besides a man. This example is based on an excellent [blog post](http://nbviewer.jupyter.org/github/brianckeegan/Bechdel/blob/master/Bechdel_test.ipynb) by Brian Keegan, who strongly advocates for reproducibility in data journalism. The code is available under the [MIT license](LICENSE).
 
 Original Experiment
 -------------------
@@ -19,8 +19,14 @@ To run this experiment without ReproZip, you will first need to install the foll
 * [html5lib](https://github.com/html5lib/html5lib-python)
 * [matplotlib](http://matplotlib.org/)
 * [Requests](http://docs.python-requests.org/en/master/)
+* [Statsmodels](http://statsmodels.sourceforge.net/index.html)
 
-Then, run each script with Python, in the aforementioned order. Alternatively, you can run the data analysis step directly using the data we provide in this repository.
+Then, run each script with Python, in the following order:
+
+    $ python fetch.py    ## step 1
+    $ python bechdel.py  ## step 2
+
+Alternatively, you can run the data analysis step (step 2) directly using the data we provide in this repository.
 
 ReproZip Package
 ----------------
