@@ -1,7 +1,7 @@
 Irish National School System Plots 
 ===========================================
 
-This example is an attempt to replicate the findings from [Nick Wolf](http://www.nmwolf.net/)'s [National School System and the Irish Language Heaney Lecture 2015](http://doi.org/10.17605/OSF.IO/PGK8V). The materials were from his lecture given as part of the Heaney Lecture Series at St. Patrick's College, Drumcondra, Ireland under the 2015 series theme of education. The lectures from this series will be published by Four Courts Press in 2016 in a collection edited by James Kelly of St. Patrick's College. Look for the published essay: "The National School System and the Irish Language in the Nineteenth Century" (ed. James Kelly, Four Courts Press, 2016).
+This example is an attempt to replicate the findings from [Nick Wolf](http://www.nmwolf.net/)'s [National School System and the Irish Language Heaney Lecture 2015](http://doi.org/10.17605/OSF.IO/PGK8V). The materials are from his lecture given as part of the Heaney Lecture Series at St. Patrick's College, Drumcondra, Ireland under the 2015 series theme of education. The lectures from this series will be published by Four Courts Press in 2016 in a collection edited by James Kelly of St. Patrick's College. Look for the published essay: "The National School System and the Irish Language in the Nineteenth Century" (ed. James Kelly, Four Courts Press, 2016).
 
 From the project description: "One of the more puzzling aspects of the development of the Irish national education program in the nineteenth century was the ability of the commissioners to implement an English-only curriculum in a student population with a significant proportion of Irish speakers without experiencing pedagogical roadblocks, especially during its initial decades. This essay examines the distribution of schools in relation to Irish-speaking communities to assess the reasons for this response."
 
@@ -15,9 +15,9 @@ The original experiment uses this R script to create plots from the extracted Ir
 
 And then simply run: 
 
-    $ RScript NationalSchools_Wolf_2016.R   ## step 1
+    $ RScript NationalSchools_Wolf_2016.R
 
-However, if we look more closely at the ReproZip package, we see many more dependencies:
+However, if we look more closely at the [ReproZip package](https://nyu.box.com/s/2addfaiur04hg1beeux07gjbcm2131pp), we see many more dependencies:
 
     $ reprounzip info national-schools.rpz
 
@@ -52,11 +52,9 @@ How to Reproduce
 
 The steps of the experiment can be reproduced as follows:
 
-    $ reprounzip vagrant setup national-schools.rpz national-schools ## step 1, create the unpacker and setup it's directory
-    $ reprounzip vagrant run national-schools   ## step 2, run the unpacker and reproduce the experiment
+    $ reprounzip vagrant setup national-schools.rpz national-schools/ ## setup virtual machine
+    $ reprounzip vagrant run national-schools/                        ## run the unpacker and reproduce the experiment
 
 Next, you can retrieve all the plots in a single PDF produced from the analysis as follows:
 
     $ reprounzip vagrant download national-schools/ --all
-
-[For help and troubleshooting, see the documentation on unpacking experiments.](https://reprozip.readthedocs.org/en/1.0.x/unpacking.html#unpacker-commands)
