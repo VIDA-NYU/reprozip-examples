@@ -26,6 +26,10 @@ Examples
 
 * [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
 
+*Archiving and porting websites*
+
+* [django-blog](django-blog): A simple website built with Django. Simply displays a list of blog posts and allows the admin to edit or post, but is a realistic small web application using a database (SQLite3).
+
 Instructions for reproducing the examples use the [vagrant unpacker](http://reprozip.readthedocs.org/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine). However, any of the [available unpackers](http://reprozip.readthedocs.org/en/stable/unpacking.html#unpackers) can be used.
 
 Other Useful Links
