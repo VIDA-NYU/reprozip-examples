@@ -26,13 +26,17 @@ Examples
 
 * [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
 
-Instructions for reproducing the examples use the [vagrant unpacker](http://reprozip.readthedocs.org/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine). However, any of the [available unpackers](http://reprozip.readthedocs.org/en/stable/unpacking.html#unpackers) can be used.
+*Archiving and porting websites*
+
+* [django-blog](django-blog): A simple website built with Django that displays a list of blog posts and allows the admin to edit or post. Despite its simplicity, it represents a realistic small web application using a database (SQLite3).
+
+Instructions for reproducing the examples use the [vagrant](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine) and the [docker](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-docker-unpacker-building-a-docker-container) unpackers. However, any of the [available unpackers](http://reprozip.readthedocs.io/en/stable/unpacking.html#unpackers) can be used.
 
 Other Useful Links
 ------------------
 
 * [Main Website](https://vida-nyu.github.io/reprozip/)
-* [Documentation](http://reprozip.readthedocs.org/)
+* [Documentation](http://reprozip.readthedocs.io/)
 * [GitHub Repository](https://github.com/ViDA-NYU/reprozip)
 * [Packing and Unpacking with ReproZip](https://www.youtube.com/watch?v=-zLPuwCHXo0): A YouTube video showing how to pack and unpack an experiment using ReproZip.
 
