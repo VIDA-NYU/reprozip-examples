@@ -21,7 +21,7 @@ The server can be started as follows:
     $ reprounzip docker setup djangogirls_blog.rpz blog/
     $ reprounzip docker run blog/ --docker-option=-p --docker-option=8000:8000
 
-Note that we need to pass `-p 8000:8000` to Docker for it to expose the port from the container. You can then access the website at `http://127.0.0.1:8000/` (or at your docker-machine's IP). The administrative interface is setup at `http://127.0.0.1:8000/admin/` with username `admin` and password `adminadmin`.
+Note that we need to pass `-p 8000:8000` to Docker for it to expose the port from the container. You can then access the website at `http://IP:8000/`, where `IP` is your docker-machine's IP address (which can be retrieved by running `docker-machine ip`). The administrative interface is setup at `http://IP:8000/admin/` with username `admin` and password `adminadmin`.
 
 How to Run in the Cloud
 -----------------------
