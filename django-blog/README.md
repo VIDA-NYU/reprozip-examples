@@ -28,12 +28,12 @@ How to Run in the Cloud
 
 Running the website in a cloud server is just a matter of provisioning and using a cloud instance. For example, using [docker-machine](https://docs.docker.com/machine/) to run on [AWS](https://aws.amazon.com/), you can use the following:
 
-    $ docker-machine create --driver amazonec2 --amazonec2-access-key AWS_ID --amazonec2-secret-key AWS_KEY --amazonec2-zone=b aws01
+    $ docker-machine create --driver amazonec2 --amazonec2-access-key AWS_ID --amazonec2-secret-key AWS_KEY --amazonec2-vpc-id AWS_VPC_ID --amazonec2-region AWS_REGION --amazonec2-zone=AWS_ZONE aws01
     $ eval $(docker-machine env aws01)
     $ reprounzip docker setup djangogirls_blog.rpz blog-aws/
     $ reprounzip docker run -d blog-aws/ --docker-option=-p --docker-option=80:8000 
     $ docker ps
 
-where `AWS_ID` is the AWS Access Key ID, and `AWS_KEY` is the AWS Secret Access Key.
+where `AWS_ID` is the AWS Access Key ID, `AWS_KEY` is the AWS Secret Access Key, `AWS_VPC_ID` is the identification of the Amazon Virtual Private Cloud (VPC), `AWS_REGION` is the region where the subnet is available, and `AWS_ZONE` is the zone where the subnet is available.
 
-You will need to create a VPC and a subnet at AWS. For more information on this, please check the [AWS documentation](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html).
+To run on AWS, you will need to create a VPC and a subnet. For more information on this, please check the [AWS documentation](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html).
