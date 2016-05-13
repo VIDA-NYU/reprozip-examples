@@ -26,9 +26,10 @@ Examples
 
 * [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
 
-*Archiving and porting websites*
+*Archiving and porting web applications*
 
 * [django-blog](django-blog): A simple website built with Django that displays a list of blog posts and allows the admin to edit or post. Despite its simplicity, it represents a realistic small web application using a database (SQLite3).
+* [stacked-up](stacked-up): A website called [Stacked Up](http://stackedup.org/), also built with Django, to explore the textbook inventory of Philadelphia public schools. All the data is stored in a PostgreSQL database.
 
 Instructions for reproducing the examples use the [vagrant](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine) and the [docker](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-docker-unpacker-building-a-docker-container) unpackers. However, any of the [available unpackers](http://reprozip.readthedocs.io/en/stable/unpacking.html#unpackers) can be used.
 
