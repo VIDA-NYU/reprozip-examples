@@ -35,3 +35,5 @@ Running the website in a cloud server is just a matter of provisioning and using
     $ docker ps
 
 where `AWS_ID` is the AWS Access Key ID, and `AWS_KEY` is the AWS Secret Access Key.
+
+You will need to create a VPC and a subnet at AWS. For more information on this, please check the [AWS documentation](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html).
