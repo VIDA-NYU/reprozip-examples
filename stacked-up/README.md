@@ -19,13 +19,13 @@ In the original implementation, to locally run the web application, one needs to
     
 However, to properly pack the web application, the database also needs to be traced. Therefore, a script, named [runserver](https://github.com/fchirigati/sdp_curricula/blob/master/runserver), was created to include both the database and the website:
 
-    $ /etc/init.d/postgresql start        ## Start Database Server
+    $ sudo /etc/init.d/postgresql start   ## Start Database Server
     $ ./manage.py runserver 0.0.0.0:8000  ## Run Stacked Up
-    $ /etc/init.d/postgresql stop         ## Stop Database Server
+    $ sudo /etc/init.d/postgresql stop    ## Stop Database Server
 
 and this script was then traced by ReproZip:
 
-    $ reprozip trace ./runserver
+    # reprozip trace ./runserver
 
 This guarantees that both the database and the website are properly identified and traced.
 
