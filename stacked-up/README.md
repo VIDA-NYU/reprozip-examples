@@ -20,14 +20,16 @@ In the original implementation, to locally run the web application, one needs to
 However, to properly pack the web application, the database also needs to be traced. Therefore, a script, named [runserver](https://github.com/fchirigati/sdp_curricula/blob/master/runserver), was created to include both the database and the website:
 
     $ sudo /etc/init.d/postgresql start   ## Start Database Server
+    $ trap ' ' INT
     $ ./manage.py runserver 0.0.0.0:8000  ## Run Stacked Up
+    $ trap - INT
     $ sudo /etc/init.d/postgresql stop    ## Stop Database Server
 
 and this script was then traced by ReproZip:
 
-    # reprozip trace ./runserver
+    $ reprozip trace ./runserver
 
-This guarantees that both the database and the website are properly identified and traced.
+This guarantees that both the database and the website are properly identified and traced. Please note the use of `trap` to correctly handle Unix signals.
 
 In addition, in the [configuration file](http://reprozip.readthedocs.io/en/1.0.x/packing.html#editing-the-configuration-file), all the database and web application files were included under the ``additional_patterns`` section:
 
