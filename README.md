@@ -17,6 +17,7 @@ Examples
 * [bechdel-test](bechdel-test): A data analysis experiment that tries to reproduce the claims of an [article](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) from FiveThirtyEight.
 * [ising-model](ising-model): A typical simulation in statistical physics, consisting of large scale Monte Carlo simulations followed by an involved statistical analysis of the results.
 * [irish-schools](irish-schools): An example from digital humanities, where publication ready graphs and materials are generated from tabular data using R. 
+* [BusVis](BusVis): Visualization of the Konstanz bus transportation system
 
 *Extending the original experiment in VisTrails*
 
