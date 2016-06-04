@@ -17,11 +17,14 @@ Examples
 * [bechdel-test](bechdel-test): A data analysis experiment that tries to reproduce the claims of an [article](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) from FiveThirtyEight.
 * [ising-model](ising-model): A typical simulation in statistical physics, consisting of large scale Monte Carlo simulations followed by an involved statistical analysis of the results.
 * [irish-schools](irish-schools): An example from digital humanities, where publication ready graphs and materials are generated from tabular data using R. 
-* [BusVis](BusVis): Visualization of the Konstanz bus transportation system
 
 *Extending the original experiment in VisTrails*
 
 * [digits-sklearn](digits-sklearn): A supervised learning and classification experiment written in Python, using [scikit-learn](http://scikit-learn.org/).
+
+*Packing interactive and GUI applications*
+
+* [bus-vis](bus-vis): A Java application for visualizing the Konstanz bus transportation system.
 
 *Reproducing the experiment with a different input*
 
