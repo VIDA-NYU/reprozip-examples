@@ -22,6 +22,10 @@ Examples
 
 * [digits-sklearn](digits-sklearn): A supervised learning and classification experiment written in Python, using [scikit-learn](http://scikit-learn.org/).
 
+*Packing interactive and GUI applications*
+
+* [bus-vis](bus-vis): A Java application for visualizing the Konstanz bus transportation system.
+
 *Reproducing the experiment with a different input*
 
 * [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
