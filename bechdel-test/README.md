@@ -1,8 +1,8 @@
 The Bechdel Test Article in FiveThirtyEight
 ===========================================
 
-<img src="median_budget.png" height="250">
-<img src="median_profit.png" height="250">
+<img src="median_budget.png" height="230">
+<img src="median_profit.png" height="230">
 
 This example is an attempt to replicate the findings from [an article in FiveThirtyEight](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) that examines gender bias in the movie business using the Bechdel test: a movie passes the Bechdel test if there are (1) two named women in it, (2) who talk to each other, (3) about something besides a man. This example is based on an excellent [blog post](http://nbviewer.jupyter.org/github/brianckeegan/Bechdel/blob/master/Bechdel_test.ipynb) by Brian Keegan, who strongly advocates for reproducibility in data journalism. The code is available under the [MIT license](LICENSE).
 
