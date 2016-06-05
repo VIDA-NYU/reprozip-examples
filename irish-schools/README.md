@@ -1,5 +1,8 @@
 Irish National School System Plots 
-===========================================
+==================================
+
+<img src="Rplots-1.png" height="300">
+<img src="Rplots-2.png" height="300">
 
 This example is an attempt to replicate the findings from [Nick Wolf](http://www.nmwolf.net/)'s [National School System and the Irish Language Heaney Lecture 2015](http://doi.org/10.17605/OSF.IO/PGK8V). The materials are from his lecture given as part of the Heaney Lecture Series at St. Patrick's College, Drumcondra, Ireland under the 2015 series theme of education. The lectures from this series will be published by Four Courts Press in 2016 in a collection edited by James Kelly of St. Patrick's College. Look for the published essay: "The National School System and the Irish Language in the Nineteenth Century" (ed. James Kelly, Four Courts Press, 2016).
 
