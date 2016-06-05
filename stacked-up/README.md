@@ -1,7 +1,8 @@
 Stacked Up
 ==========
 
-<div align="center"><img src="stacked-up.png" height="230"></div>
+<div align="center"><img src="stacked-up.png" height="500"></div>
+<br/>
 
 [Stacked Up](http://stackedup.org/) is a website created to explore the textbook inventory of Philadelphia public schools, where citizens can check the book records at neighborhood schools. This web application was written using the [Django](https://www.djangoproject.com/) web framework, and all the data is stored under a local PostgreSQL database. It can easily be run again on different machines or in the cloud.
 
