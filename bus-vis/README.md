@@ -1,6 +1,8 @@
 BusVis: Visualization of the Konstanz Bus Transportation System
 ===============================================================
 
+<img src="BusVis.png" height="500">
+
 BusVis is a Java application that shows the fastest time and path between two bus stops in the city of Konstanz. You can see the time from a station to every other update in real time as buses come and go. The application consists of a visualization panel with which users can interact.
 
 Original Experiment
