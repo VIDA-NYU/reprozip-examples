@@ -1,6 +1,8 @@
 Predicting the Values of Hand-Written Digits
 ============================================
 
+<img src="output.png" height="600">
+
 This example creates a SVM classifier for [the digits dataset](http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits) using [scikit-learn](http://scikit-learn.org/), and predicts the values of hand-written digits of an [input image](photo.jpg).
 
 Original Experiment
