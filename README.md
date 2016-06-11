@@ -15,6 +15,7 @@ Examples
 *Reproducing published results*
 
 * [bechdel-test](bechdel-test): A data analysis experiment that tries to reproduce the claims of an [article](http://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) from FiveThirtyEight.
+* [data-polygamy](data-polygamy): A paper published at SIGMOD 2016 whose plots were made reproducible using ReproZip.
 * [ising-model](ising-model): A typical simulation in statistical physics, consisting of large scale Monte Carlo simulations followed by an involved statistical analysis of the results.
 * [irish-schools](irish-schools): An example from digital humanities, where publication ready graphs and materials are generated from tabular data using R.
 * [mongodb-vls](mongodb-vls): A paper published at ICDE 2016 whose plots were made reproducible using ReproZip. 
