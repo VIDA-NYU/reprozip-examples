@@ -26,5 +26,5 @@ For instance, to reproduce Figure 7:
     $ reprounzip vagrant download query_execution_time/ scan_duration.png
     $ reprounzip vagrant download query_execution_time/ scan_duration_updates.png
 
-<div align="center"><img src="https://github.com/ViDA-NYU/mongodb-vls/blob/master/experiments/plots/results/scan_duration.png" height="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ViDA-NYU/mongodb-vls/blob/master/experiments/plots/results/scan_duration_updates.png" height="400"></div>
+<div align="center"><img src="https://github.com/ViDA-NYU/mongodb-vls/blob/master/experiments/plots/results/scan_duration.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ViDA-NYU/mongodb-vls/blob/master/experiments/plots/results/scan_duration_updates.png" height="300"></div>
 <br/>
