@@ -13,7 +13,7 @@ The original example can be run as follows:
 
 which returns the following output:
 
-    $ 5
+    5
 
 ReproZip Package
 ----------------
