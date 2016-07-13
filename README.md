@@ -38,6 +38,7 @@ Examples
 
 * [django-blog](django-blog): A simple website built with Django that displays a list of blog posts and allows the admin to edit or post. Despite its simplicity, it represents a realistic small web application using a database (SQLite3).
 * [stacked-up](stacked-up): A website called [Stacked Up](http://stackedup.org/), also built with Django, to explore the textbook inventory of Philadelphia public schools. All the data is stored in a PostgreSQL database.
+* [repromatch](repromatch): A website designed to help you find the tool that best matches your reproducibility needs. Built with Django and Apache Solr for search.
 
 Instructions for reproducing the examples use the [vagrant](https://docs.reprozip.org/en/1.0.x/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine) and the [docker](https://docs.reprozip.org/en/1.0.x/unpacking.html#the-docker-unpacker-building-a-docker-container) unpackers. However, any of the [available unpackers](https://docs.reprozip.org/en/1.0.x/unpacking.html#unpackers) can be used.
 
