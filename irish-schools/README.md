@@ -18,7 +18,7 @@ The original experiment uses this R script to create plots from the extracted Ir
 
 And then simply run: 
 
-    $ RScript NationalSchools_Wolf_2016.R
+    $ Rscript NationalSchools_Wolf_2016.R
 
 However, if we look more closely at the [ReproZip package](https://osf.io/wfvqr/), we see many more dependencies:
 
