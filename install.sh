@@ -4,7 +4,7 @@ echo '>> Updating information about packages...'
 sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list' # R
 gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
 gpg -a --export E084DAB9 | sudo apt-key add -
-sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' # PostgreSQL
+sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' # PostgreSQL
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 apt-get -y update
 apt-get -y install vim
@@ -15,7 +15,7 @@ apt-get -y install python
 python get-pip.py
 apt-get -y install python-dev build-essential
 
-echo 'Installing virtualenv...'
+echo '>> Installing virtualenv...'
 pip install -U virtualenv==15.0.3
 pip install -U virtualenvwrapper==4.7.2
 sh -c 'echo "\nexport WORKON_HOME=~/Envs" >> .bashrc'

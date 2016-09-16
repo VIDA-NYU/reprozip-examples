@@ -5,7 +5,7 @@ Vagrant.configure('2') do |config|
 	config.vm.box = "bento/ubuntu-15.04"
         
         config.vm.provider "virtualbox" do |vb|
-            vb.name = "reprozip-demos"
+            vb.name = "reprozip-examples"
             # vb.gui = true
         end
 
