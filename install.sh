@@ -17,9 +17,10 @@ apt-get -y install python-dev build-essential
 
 echo '>> Installing virtualenv...'
 pip install -U virtualenv==15.0.3
+mkdir ~/.virtualenvs
 pip install -U virtualenvwrapper==4.7.2
-sh -c 'echo "\nexport WORKON_HOME=~/Envs" >> .bashrc'
-source /usr/local/bin/virtualenvwrapper.sh
+sh -c 'echo "\nexport WORKON_HOME=~/.virtualenvs\nsource /usr/local/bin/virtualenvwrapper.sh" >> .bashrc'
+source .bashrc
 
 echo '>> Installing dependencies for ReproZip...'
 apt-get -y install gcc libsqlite3-dev libyaml-dev
