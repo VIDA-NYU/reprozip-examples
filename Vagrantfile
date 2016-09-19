@@ -15,5 +15,5 @@ Vagrant.configure('2') do |config|
 
         config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
-	config.vm.provision "shell", path: "install.sh"
+	config.vm.provision "shell", path: "install.sh", privileged: false
 end
