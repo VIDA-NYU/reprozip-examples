@@ -10,7 +10,7 @@ print("Loading data...")
 
 ## Revenue Data
 numbers_df = pd.read_csv('revenue.csv',encoding='utf8',index_col=0)
-numbers_df['Released'] = pd.to_datetime(numbers_df['Released'],unit='D')
+numbers_df['Released'] = pd.to_datetime(numbers_df['Released'])
 
 ## Inflation Data
 cpi = pd.read_csv('cpi.csv',index_col='Year')
@@ -35,7 +35,7 @@ print("Cleaning IMDB data...")
 imdb_df = imdb_df[imdb_df['Type'] == 'movie']
 
 # Convert to datetime objects
-imdb_df['Released'] = pd.to_datetime(imdb_df['Released'], format="%d %b %Y", unit='D', errors='coerce')
+imdb_df['Released'] = pd.to_datetime(imdb_df['Released'], format="%d %b %Y", errors='coerce')
 
 # Drop errant identifying characters in the ID field
 imdb_df['imdbID'] = imdb_df['imdbID'].str.slice(start=2)
