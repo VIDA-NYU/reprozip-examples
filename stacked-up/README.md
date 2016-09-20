@@ -11,6 +11,15 @@ Implementation
 
 The website can be accessed [here](http://stackedup.org/), and the original implementation of the website is available [here](https://github.com/merbroussard/sdp_curricula). However, the ReproZip package that we provide is based on a [fork](https://github.com/fchirigati/sdp_curricula) of the original project implementation, which fixes some issues, such as missing dependencies.
 
+If you are using the Vagrant machine provided by this repository, do the following to run the example:
+
+    $ vagrant ssh
+    $ workon stacked-up
+    $ cd sdp_curricula/
+    $ ./runserver
+    
+The app will be accessible on ``localhost:8111`` from any Web browser.
+
 ReproZip Package
 ----------------
 
