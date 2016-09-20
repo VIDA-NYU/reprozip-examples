@@ -9,6 +9,10 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 sudo apt-get -y update
 sudo apt-get -y install vim
 
+echo '>> Installing xfce4 and VirtualBox guest tools...'
+sudo apt-get -y install xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+sudo sh -c 'echo "allowed_users=anybody" > /etc/X11/Xwrapper.config'
+
 echo '>> Installing pip...'
 wget --quiet https://bootstrap.pypa.io/get-pip.py
 sudo apt-get -y install python

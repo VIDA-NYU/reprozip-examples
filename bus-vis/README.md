@@ -17,7 +17,11 @@ The application can be run as following:
     $ cd target/
     $ java -jar BusVis-0.5.1-desktop-jar-with-dependencies.jar  ## running
     
-If you are using the Vagrant machine provided by this repository, first, make sure you uncomment the ``vb.gui = true`` line in the [Vagrantfile](Vagrantfile). Then, once you are inside the machine, run the following:
+If you are using the Vagrant machine provided by this repository, first, make sure you uncomment the ``vb.gui = true`` line in the [Vagrantfile](Vagrantfile) before running ``vagrant up``. Log in to the machine (username: ``vagrant``, password: ``vagrant``) and run the following:
+
+    $ startxfce4&
+
+Then, open the Terminal and run:
 
     $ cd ~/BusVis/target/
     $ java -jar BusVis-0.5.1-desktop-jar-with-dependencies.jar
