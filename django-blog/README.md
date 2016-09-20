@@ -31,7 +31,7 @@ Running the website in a cloud server is just a matter of provisioning and using
     $ docker-machine create --driver amazonec2 --amazonec2-access-key AWS_ID --amazonec2-secret-key AWS_KEY aws01
     $ eval $(docker-machine env aws01)
     $ reprounzip docker setup djangogirls_blog.rpz blog-aws/
-    $ reprounzip docker run -d blog-aws/ --docker-option=-p --docker-option=80:8000 
+    $ reprounzip docker run -d blog-aws/ --docker-option=-p --docker-option=80:8000
     $ docker ps
 
 where `AWS_ID` is the AWS Access Key ID and `AWS_KEY` is the AWS Secret Access Key.

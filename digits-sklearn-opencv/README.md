@@ -29,16 +29,16 @@ The experiment can be reproduced as follows:
     $ reprounzip vagrant setup digitRecognition.rpz digit-recognition/
     $ reprounzip vagrant run digit-recognition/ classification
     $ reprounzip vagrant run digit-recognition/ prediction
-    
+
 The input image with the predictions can be retrieved as follows:
 
     $ reprounzip vagrant download digit-recognition/ output.jpg
-    
+
 You can also perform the same prediction with an [alternate input file](photo_2.jpg) as follows:
 
     $ reprounzip vagrant upload digit-recognition/ photo_2.jpg:photo.jpg
     $ reprounzip vagrant run digit-recognition/ prediction
-    
+
 And finally download the results as follows:
 
     $ reprounzip vagrant download digit-recognition/ output.jpg

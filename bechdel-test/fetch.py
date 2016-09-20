@@ -24,7 +24,7 @@ for character in string.printable[1:36]:
     archive['Year'] = archive['Released'].apply(lambda x:x.year)
     archive.dropna(subset=['Movie'],inplace=True)
     revenue_df_list.append(archive)
-    
+
 numbers_df = pd.concat(revenue_df_list)
 numbers_df.reset_index(inplace=True,drop=True)
 numbers_df.to_csv('revenue.csv',encoding='utf8')

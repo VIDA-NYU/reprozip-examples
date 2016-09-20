@@ -4,7 +4,7 @@ to be published by Four Courts Press in 2016 as part of the edited St. Patrick's
 These data were derived from four sources:
 ===========================================
 
-(1) Clarkson, L.A., Kennedy, L., Crawford, E.M., Dowling, M.W. (1997). Database of Irish Historical Statistics : Language, 1851-1911. [data collection]. UK Data Service. SN: 3573, http://dx.doi.org/10.5255/UKDA-SN-3573-1. 
+(1) Clarkson, L.A., Kennedy, L., Crawford, E.M., Dowling, M.W. (1997). Database of Irish Historical Statistics : Language, 1851-1911. [data collection]. UK Data Service. SN: 3573, http://dx.doi.org/10.5255/UKDA-SN-3573-1.
 
 (2) Clarkson, L.A., Kennedy, L., Crawford, E.M., Dowling, M.W. (1997). Database of Irish Historical Statistics : Age, 1821-1911. [data collection]. UK Data Service. SN: 3574, http://dx.doi.org/10.5255/UKDA-SN-3574-1.
 
@@ -38,7 +38,7 @@ TABLE 2: Provinces_NatSchools.csv
 
 Year: The school year referred to in the Commissioners' Report (4), or in the case of the year 1826, the figures provided in FitzGerald et al. (3)
 
-ReportNum: The Commissioners' Report (4) number (e.g. Thirty-Second Report, Twenty-Fourth Report, etc.), or in the case of the year 1826, the value zero to indicate use of FitzGerald et al. (3) 
+ReportNum: The Commissioners' Report (4) number (e.g. Thirty-Second Report, Twenty-Fourth Report, etc.), or in the case of the year 1826, the value zero to indicate use of FitzGerald et al. (3)
 
 Province: The name of the Irish province
 

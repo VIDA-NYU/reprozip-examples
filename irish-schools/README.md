@@ -1,4 +1,4 @@
-Irish National School System Plots 
+Irish National School System Plots
 ==================================
 
 <div align="center"><img src="Rplots-1.png" height="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Rplots-2.png" height="400"></div>
@@ -16,7 +16,7 @@ The original experiment uses this R script to create plots from the extracted Ir
 * [ggplot](http://ggplot2.org/)
 * [RStudio (for those uncomfortable with the command line)](https://www.rstudio.com/products/rstudio/download/)
 
-And then simply run: 
+And then simply run:
 
     $ Rscript NationalSchools_Wolf_2016.R
 
@@ -24,7 +24,7 @@ However, if we look more closely at the [ReproZip package](https://osf.io/wfvqr/
 
     $ reprounzip info national-schools.rpz
 
-There are: 
+There are:
 * *Total software packages*: 21
 * *Packed software packages*: 21
 * *Architecture*: x86_64 (current: amd64)

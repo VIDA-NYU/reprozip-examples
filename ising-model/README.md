@@ -24,24 +24,24 @@ The experiment can be reproduced as follows:
 
     $ reprounzip vagrant setup --memory 1024 ising_model.rpz ising_model/
     $ reprounzip vagrant run ising_model/ simulate_small
-    
+
 The figures of the [paper](http://arxiv.org/abs/1401.2000) can be reproduced as follows.
 
 *Figure 1*:
 
     $ reprounzip vagrant run ising_model/ susceptibility
     $ reprounzip vagrant download ising_model/ fig_susceptibility.pdf
-    
+
 *Figure 2*:
 
     $ reprounzip vagrant run ising_model/ binder_cumulant
     $ reprounzip vagrant download ising_model/ fig_binderU2_vs_T.pdf
-    
+
 *Figure 3*:
 
     $ reprounzip vagrant run ising_model/ binder_cumulant
     $ reprounzip vagrant download ising_model/ fig_binder_crossings_vs_L.pdf
-    
+
 *Figure 4*:
 
     $ reprounzip vagrant run ising_model/ binder_collapse

@@ -10,7 +10,7 @@ from collections import Counter
 dataset = datasets.fetch_mldata("MNIST Original")
 
 # Extract the features and labels
-features = np.array(dataset.data, 'int16') 
+features = np.array(dataset.data, 'int16')
 labels = np.array(dataset.target, 'int')
 
 # Extract the hog features

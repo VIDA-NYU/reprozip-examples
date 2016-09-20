@@ -9,7 +9,7 @@ MongoDB-VLS
 Implementation
 --------------
 
-MongoDB-VLS implementation and experiments are available [here](https://github.com/ViDA-NYU/mongodb-vls). 
+MongoDB-VLS implementation and experiments are available [here](https://github.com/ViDA-NYU/mongodb-vls).
 
 ReproZip Package
 ----------------
