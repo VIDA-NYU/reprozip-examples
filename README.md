@@ -39,6 +39,26 @@ Examples
 
 Instructions for reproducing the examples use the [vagrant](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine) and the [docker](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-docker-unpacker-building-a-docker-container) unpackers. However, any of the [available unpackers](http://reprozip.readthedocs.io/en/stable/unpacking.html#unpackers) can be used.
 
+Vagrant Machine
+---------------
+
+This repository contains a [Vagrantfile](Vagrantfile) that automatically configures a machine with the following examples:
+
+* [bechdel-test](bechdel-test)
+* [bus-vis](bus-vis)
+* [digits-sklearn](digits-sklearn)
+* [digits-sklearn-opencv](digits-sklearn-opencv)
+* [irish-schools](irish-schools)
+* [stacked-up](stacked-up)
+
+To startup the machine, make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed, and then run the following:
+
+    $ vagrant up
+
+Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the ``vb.gui = true`` line in the [Vagrantfile](Vagrantfile).
+
+Instructions on how to run each of the examples in this machine are available in their respective pages.
+
 Other Useful Links
 ------------------
 

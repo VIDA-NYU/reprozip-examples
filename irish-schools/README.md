@@ -40,6 +40,12 @@ rds, package.rds_2, package.rds_3, package.rds_4, package.rds_5, package.rds_6,
 package.rds_7, package.rds_8, package.rds_9, plyr, plyr.rdb, plyr.rdx, plyr.so,
 scales, scales.rdb, scales.rdx, scales.so, sysdata.rdx
 
+If you are using the Vagrant machine provided by this repository, do the following to run the experiment:
+
+    $ vagrant ssh
+    $ cd reprozip-examples/irish-schools/
+    $ Rscript NationalSchools_Wolf_2016.R
+
 ReproZip Package
 ----------------
 

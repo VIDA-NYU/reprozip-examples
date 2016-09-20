@@ -29,6 +29,16 @@ The confusion matrix is written to standard output as:
 
 To run this experiment without ReproZip, you will need to install [scikit-learn](http://scikit-learn.org/) and run each script with Python, in the aforementioned order.
 
+If you are using the Vagrant machine provided by this repository, run the following:
+
+    $ vagrant ssh
+    $ workon digits-sklearn
+    $ cd reprozip-examples/digits-sklearn/
+    $ python 01_getdata.py
+    $ python 02_classifier.py
+    $ python 03_predict.py
+    $ python 04_confusion_matrix.py
+
 ReproZip Package
 ----------------
 

@@ -14,7 +14,15 @@ The original experiment is composed by two steps:
 1. [Classification](generateClassifier.py): the SVM classifier is created.
 1. [Prediction](performRecognition.py): the values of hand-written digits from the input file are predicted and recognized ([output.jpg](output.jpg)).
 
-To run this experiment without ReproZip, you will need to first install [scikit-learn](http://scikit-learn.org/) and [OpenCV](http://opencv.org/), and then run each script with Python, in the aforementioned order.
+To run this experiment without ReproZip, you will need to first install [scikit-learn](http://scikit-learn.org/) and [OpenCV 3.0.0](http://opencv.org/), and then run each script with Python, in the aforementioned order.
+
+If you are using the Vagrant machine provided by this repository, run the following:
+
+    $ vagrant ssh
+    $ workon digits-sklearn-opencv
+    $ cd reprozip-examples/digits-sklearn-opencv/
+    $ python generateClassifier.py
+    $ python performRecognition.py
 
 ReproZip Package
 ----------------
