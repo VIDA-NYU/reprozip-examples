@@ -5,7 +5,7 @@ export DEBIAN_FRONTEND=noninteractive
 echo '>> Updating information about packages...' >&2
 sudo apt-get -y update
 echo '>> Installing dependencies...' >&2
-sudo apt-get -y install vim git python python-dev python-pip python-virtualenv build-essential libsqlite3-dev virtualenvwrapper python-numpy
+sudo apt-get -y install vim git python python-dev python-pip python-virtualenv build-essential libsqlite3-dev virtualenvwrapper python-numpy libffi-dev
 
 echo '>> Installing xfce4 and VirtualBox guest tools...' >&2
 sudo apt-get -y install xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
@@ -85,3 +85,11 @@ chmod +x manage.py
 pg_restore -d $DB_NAME sdp_curricula.dump # load all the data
 sudo /etc/init.d/postgresql stop
 deactivate
+cd ../..
+
+echo '>> Installing reprozip...' >&2
+mkvirtualenv --system-site-packages reprozip
+pip install --upgrade reprozip reprounzip[all]
+mkdir $HOME/.bin
+ln -s $HOME/.virtualenvs/reprozip/bin/reprozip $HOME/.virtualenvs/reprozip/bin/reprounzip $HOME/.bin/
+echo -e 'PATH=$HOME/.bin:$PATH\nexport PATH' >>$HOME/.bash_profile
