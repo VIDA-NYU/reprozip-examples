@@ -23,7 +23,7 @@ If you are using the Vagrant machine provided by this repository, first, make su
 
 Then, open the Terminal and run:
 
-    $ cd ~/BusVis/target/
+    $ cd reprozip-examples/bus-vis/BusVis/target/
     $ java -jar BusVis-0.5.1-desktop-jar-with-dependencies.jar
 
 ReproZip Package

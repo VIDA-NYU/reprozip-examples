@@ -15,10 +15,10 @@ If you are using the Vagrant machine provided by this repository, do the followi
 
     $ vagrant ssh
     $ workon stacked-up
-    $ cd sdp_curricula/
+    $ cd reprozip-examples/stacked-up/sdp_curricula/
     $ ./runserver
 
-The app will be accessible on ``localhost:8111`` from any Web browser.
+The app will be accessible on ``localhost:8000`` from any Web browser.
 
 ReproZip Package
 ----------------
