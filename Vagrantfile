@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure('2') do |config|
-    config.vm.box = "bento/ubuntu-16.04"
+    config.vm.box = "vida-nyu/ubuntu-16.04-upstart"
 
     config.vm.provider "virtualbox" do |vb|
         vb.name = "reprozip-examples"
