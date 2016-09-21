@@ -8,8 +8,8 @@ echo '>> Installing dependencies...' >&2
 sudo apt-get -y install vim git python python-dev python-pip python-virtualenv build-essential libsqlite3-dev virtualenvwrapper python-numpy libffi-dev
 
 echo '>> Installing xfce4 and VirtualBox guest tools...' >&2
-sudo apt-get -y install xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
-sudo sh -c 'echo "allowed_users=anybody" > /etc/X11/Xwrapper.config'
+sudo apt-get -y install xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 xserver-xorg-legacy
+sudo sh -c '(echo "allowed_users=anybody"; echo "needs_root_rights=yes") > /etc/X11/Xwrapper.config'
 
 echo '>> Setting up virtualenvwrapper...' >&2
 rm -rf .virtualenvs
