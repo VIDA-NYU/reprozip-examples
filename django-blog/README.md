@@ -11,7 +11,7 @@ The blog is an implementation of the [Django Girls Tutorial](http://tutorial.dja
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/s/nc9ipxmtalj9dy1lbeb0r4xp9s95pc48) (19 MB). The administrative interface is setup at `/admin/` with username `admin` and password `adminadmin`.
+The ReproZip package is available [here](https://osf.io/zw6j7/) (19 MB). The administrative interface is setup at `/admin/` with username `admin` and password `adminadmin`.
 
 How to Reproduce
 ----------------

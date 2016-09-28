@@ -18,7 +18,7 @@ which returns the following output:
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/s/wq4e4mohg4wn719tef1csrad5x0b1kwh) (1.6 MB).
+The ReproZip package is available [here](https://osf.io/5ke97/) (1.6 MB).
 
 How to Reproduce
 ----------------

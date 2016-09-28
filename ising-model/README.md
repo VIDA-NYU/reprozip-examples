@@ -15,7 +15,7 @@ A [virtual machine](http://archive.comp-phys.org/provenance_challenge/provenance
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/s/03umg9hclll9qkq0omxcf6r0vrf4eg3m) (24.9 MB). This package reproduces the single-threaded version of the experiment for the following system sizes: 8, 16, 32, and 64.
+The ReproZip package is available [here](https://osf.io/phw4f/) (24.9 MB). This package reproduces the single-threaded version of the experiment for the following system sizes: 8, 16, 32, and 64.
 
 How to Reproduce
 ----------------

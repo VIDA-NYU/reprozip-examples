@@ -42,7 +42,7 @@ If you are using the Vagrant machine provided by this repository, run the follow
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/s/kg8o1hlg1t8mr4yony3baxuiiw37latv) (37.9 MB).
+The ReproZip package is available [here](https://osf.io/r2ptb/) (37.9 MB).
 
 How to Reproduce
 ----------------

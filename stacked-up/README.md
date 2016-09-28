@@ -23,7 +23,7 @@ The app will be accessible on ``localhost:8000`` from any Web browser.
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/s/6th8wz15byzm2etkpbwkmtabggfgj5ei) (58 MB).
+The ReproZip package is available [here](https://osf.io/nm283/) (58 MB).
 
 In the original implementation, to locally run the web application, one needs to run the following:
 

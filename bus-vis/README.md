@@ -29,7 +29,7 @@ Then, open the Terminal and run:
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://nyu.box.com/s/euxfsq1gjy9khehoakg2g9s4iu13plnd) (69 MB).
+The ReproZip package is available [here](https://osf.io/kaxse/) (69 MB).
 
 How to Reproduce
 ----------------
