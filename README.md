@@ -73,6 +73,7 @@ Team
 ReproZip is currently being developed at [NYU](http://engineering.nyu.edu/). The team includes:
 
 * [Fernando Chirigati](http://vgc.poly.edu/~fchirigati/)
+* [Juliana Freire](http://vgc.poly.edu/~juliana/)
 * [Rémi Rampin](https://remram.fr/)
 * [Dennis Shasha](http://cs.nyu.edu/shasha/)
-* [Juliana Freire](http://vgc.poly.edu/~juliana/)
+* [Vicky Steeves](http://vickysteeves.com/)
