@@ -7,8 +7,13 @@ sudo apt-get -y update
 echo '>> Installing dependencies...' >&2
 sudo apt-get -y install vim git python python-dev python-pip python-virtualenv build-essential libsqlite3-dev virtualenvwrapper python-numpy libffi-dev
 
-echo '>> Installing xfce4 and VirtualBox guest tools...' >&2
-sudo apt-get -y install xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 xserver-xorg-legacy
+echo '>> Removing default X server...' >&2
+sudo service xserver stop
+sudo rm /etc/init.d/xserver && sudo update-rc.d xserver remove
+sudo killall Xorg
+
+echo '>> Setting up Xfce...' >&2
+sudo apt-get -y install xfce4 xserver-xorg-legacy
 sudo sh -c '(echo "allowed_users=anybody"; echo "needs_root_rights=yes") > /etc/X11/Xwrapper.config'
 
 echo '>> Setting up virtualenvwrapper...' >&2
@@ -22,6 +27,7 @@ cd reprozip-examples
 echo '>> Installing dependencies for digits-sklearn...' >&2
 cd digits-sklearn/
 mkvirtualenv --system-site-packages digits-sklearn
+#sudo apt-get -y install libblas-dev liblapack-dev gfortran
 pip install -r requirements.txt
 deactivate
 cd ..
@@ -35,8 +41,8 @@ deactivate
 cd ..
 
 echo '>> Installing dependencies for bechdel-test...' >&2
-mkvirtualenv --system-site-packages bechdel-test
 cd bechdel-test/
+mkvirtualenv --system-site-packages bechdel-test
 pip install -r requirements.txt
 deactivate
 cd ..
