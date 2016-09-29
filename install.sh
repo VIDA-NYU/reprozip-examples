@@ -15,6 +15,13 @@ sudo killall Xorg
 echo '>> Setting up Xfce...' >&2
 sudo apt-get -y install xfce4 xserver-xorg-legacy
 sudo sh -c '(echo "allowed_users=anybody"; echo "needs_root_rights=yes") > /etc/X11/Xwrapper.config'
+sudo ed /etc/xdg/xfce4/xinitrc <<'END'
+1a
+
+unset SSH_CONNECTION
+.
+wq
+END
 
 echo '>> Setting up virtualenvwrapper...' >&2
 rm -rf .virtualenvs
