@@ -7,6 +7,7 @@ body p {
   font-size:1.1em;
 }
 
+/* --------------------NAV BAR--------------------------*/
 .navbar-inverse {
   background-color: #57068c;
   border-color: transparent;
@@ -64,6 +65,7 @@ body p {
   color: #ffffff;
 }
 
+/* --------------------DROP DOWN AT NAVBAR--------------------------*/
 .dropdown-menu>li>a{
     display:block;
     padding:3px 20px;
@@ -88,6 +90,7 @@ body p {
     color:#bbbbbb
 }
 
+/* --------------------CARDS FOR EXAMPLES--------------------------*/
 .card {
   position: relative;
   display: block;
@@ -95,6 +98,12 @@ body p {
   background-color: #fff;
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+a.btn.btn-primary{
+  position: absolute;
+  bottom: 1em;
+  background-color:#57068c;
 }
 
 .card-block {
@@ -316,7 +325,7 @@ body p {
 }
 
 .card{position:relative;display:block;margin-bottom:.75rem;background-color:#fff;border-radius:.25rem;border:1px solid rgba(0,0,0,.125)}
-.card-block{padding:1.25rem}
+.card-block{padding:1.25em 1.25em 3em 1.25em;}
 .card-block::after{content:"";display:table;clear:both}
 .card-title{margin-bottom:.75rem}
 .card-subtitle{margin-top:-.375rem;margin-bottom:0}
