@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="bootstrap/css/paper/bootstrap.min.css">
+     <link rel="stylesheet" href="bootstrap/css/paper/bootstrap.css">
+     <link rel="stylesheet" href="bootstrap/css/paper/custom.css">
+
+    <title>ReproZip Examples</title>
+
+  </head>
+  <body>
+
+    <div class="container" id="content" role="main">
+
+      <!-- Menubar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ReproZip Examples</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+              <li><a href="vagrant.html">Using Our Vagrant Box</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <!--dropdown-->
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful Links<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://vida-nyu.github.io/reprozip/">Main Website</a></li>
+                  <li><a href="https://reprozip.readthedocs.io/">Documentation</a></li>
+                  <li><a href="https://github.com/ViDA-NYU/reprozip">GitHub Repository</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=-zLPuwCHXo0">YouTube Demo Video</a></li>
+                </ul>
+              </li><!--end dropdown-->
+
+              <!--dropdown-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team Members<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://remram.fr/">Rémi Rampin</a></li>
+                  <li><a href="https://vgc.poly.edu/~fchirigati/">Fernando Chirigati</a></li>
+                  <li><a href="http://vickysteeves.com/">Vicky Steeves</a></li>
+                  <li><a href="https://vgc.poly.edu/~juliana/">Juliana Freire</a></li>
+                  <li><a href="http://cs.nyu.edu/shasha/">Dennis Shasha</a></li>
+                </ul>
+              </li><!--end dropdown-->
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav><!-- End of Menubar -->
+
+      <div class="body-content"> <!--Body content-->
+
+        <h3><a id="About"></a>How to Use This Site</h3>
+        <p>This site holds some examples and use cases from different domains that showcase <a href="https://vida-nyu.github.io/reprozip/">the ReproZip software packing tool</a>. You’ll find more information about each particular example in its associated README when you click the "REPRODUCE THIS" button below. Instructions for reproducing the examples use the <a href="https://reprozip.readthedocs.io/en/1.0.x/unpacking.html#unpack-vagrant">vagrant</a> and the <a href="https://reprozip.readthedocs.io/en/1.0.x/unpacking.html#docker-plugin">docker</a> unpackers. However, any of the <a href="https://reprozip.readthedocs.io/en/1.0.x/unpacking.html#unpackers">available unpackers</a> can be used.</p>
+        <hr/>
+
+        <h3><a id="ReproZipExamples"></a>ReproZip Examples</h3>
+
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+
+            <div class="card">
+              <img class="card-img-top" src="bash-count/graph.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">bash-count</h4>
+                <p class="card-text">A simple bash script that counts the number of pages of an input file.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/bash-count" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="bechdel-test/median_budget.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">bechdel-test</h4>
+                <p class="card-text">A data analysis experiment that tries to reproduce the claims of an article from FiveThirtyEight.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/bechdel-test" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="data-polygamy/data-polygamy.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">data-polygamy</h4>
+                <p class="card-text">A paper published at SIGMOD 2016 whose plots were made reproducible using ReproZip.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/data-polygamy" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="ising-model/ising-model.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">ising-model</h4>
+                <p class="card-text">A typical simulation in statistical physics, consisting of large scale Monte Carlo simulations followed by an involved statistical analysis of the results.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/ising-model" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+
+            <div class="card">
+              <img class="card-img-top" src="irish-schools/Rplots-1.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">irish-schools</h4>
+                <p class="card-text">An example from digital humanities, where publication-ready graphs and materials are generated from tabular data using R.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/irish-schools" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="mongodb-vls/mongodb-vls.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">mongodb-vls</h4>
+                <p class="card-text">A paper published at ICDE 2016 whose plots were made reproducible using ReproZip.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/mongodb-vls" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="digits-sklearn/confusion-matrix.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">digits-sklearn</h4>
+                <p class="card-text">A supervised learning and classification experiment written in Python, using scikit-learn.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/digits-sklearn" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="bus-vis/BusVis.png" height="180" width="255" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">bus-vis</h4>
+                <p class="card-text">A Java application for visualizing the Konstanz bus transportation system.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/bus-vis" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+
+            <div class="card">
+              <img class="card-img-top" src="digits-sklearn-opencv/photo.jpg" height="180" width="318" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">digits-sklearn-opencv</h4>
+                <p class="card-text">A similar experiment to digits-sklearn, but using the OpenCV library to extract the digits from a photograph before predicting their values.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/digits-sklearn-opencv" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="django-blog/django-blog.png" height="180" width="318" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">django-blog</h4>
+                <p class="card-text">A simple website built with Django that displays a list of blog posts and allows the admin to edit or post. Despite its simplicity, it represents a realistic small web application using a database (SQLite3).</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/django-blog" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="stacked-up/stacked-up.png" height="180" width="318" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">stacked-up</h4>
+                <p class="card-text">A website called Stacked Up, also built with Django, to explore the textbook inventory of Philadelphia public schools. All the data is stored in a PostgreSQL database.</p>
+                <a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/stacked-up" class="btn btn-primary">Reproduce this</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end body content -->
+    </div>
+
+    <!-- begin footer -->
+    <footer id="footer">
+      <div align="center">
+        <hr/>
+        <p>Any questions or comments can be directed to the <a href="mailto:reprozip-users@vgc.poly.edu">ReproZip mailing list</a> or on <a href="https://github.com/ViDA-NYU/reprozip-examples">GitHub</a> via an issue.</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- end scripts -->
+
+  </body>
+</html>
