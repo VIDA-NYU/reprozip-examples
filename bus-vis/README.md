@@ -17,15 +17,6 @@ The application can be run as following:
     $ cd target/
     $ java -jar BusVis-0.5.1-desktop-jar-with-dependencies.jar  ## running
 
-If you are using the Vagrant machine provided by this repository, first, make sure you uncomment the ``vb.gui = true`` line in the [Vagrantfile](Vagrantfile) before running ``vagrant up``. Log in to the machine (username: ``vagrant``, password: ``vagrant``) and run the following:
-
-    $ startxfce4&
-
-Then, open the Terminal and run:
-
-    $ cd reprozip-examples/bus-vis/BusVis/target/
-    $ java -jar BusVis-0.5.1-desktop-jar-with-dependencies.jar
-
 ReproZip Package
 ----------------
 
@@ -42,3 +33,15 @@ You can then run BusVis as following:
     $ reprounzip vagrant run --enable-x11 busvis/
 
 Please note that X11 forwarding through SSH is slow, so it may be slow to interact with the application. However, we have plans to fix this issue. For more information, see [ViDA-NYU/reprozip#189](https://github.com/ViDA-NYU/reprozip/issues/189).
+
+Packing from our demo VM
+------------------------
+
+If you are using our demo VM image, first, make sure you uncomment the ``vb.gui = true`` line in the [Vagrantfile](../Vagrantfile) before running ``vagrant up``. Log in to the machine (username: ``vagrant``, password: ``vagrant``) and run the following:
+-
+    $ startxfce4
+
+Then, open the Terminal and run:
+
+    $ cd reprozip-examples/bus-vis/BusVis/target/
+    $ java -jar BusVis-0.5.1-desktop-jar-with-dependencies.jar

@@ -29,16 +29,6 @@ The confusion matrix is written to standard output as:
 
 To run this experiment without ReproZip, you will need to install [scikit-learn](http://scikit-learn.org/) and run each script with Python, in the aforementioned order.
 
-If you are using the Vagrant machine provided by this repository, run the following:
-
-    $ vagrant ssh
-    $ workon digits-sklearn
-    $ cd reprozip-examples/digits-sklearn/
-    $ python 01_getdata.py
-    $ python 02_classifier.py
-    $ python 03_predict.py
-    $ python 04_confusion_matrix.py
-
 ReproZip Package
 ----------------
 
@@ -66,3 +56,16 @@ The digits-sklearn experiment is a great example of how you can easily extend th
 Recall that ReproZip automatically generates a [VisTrails](http://www.vistrails.org/) workflow for the experiment given that [reprounzip-vistrails](http://reprozip.readthedocs.org/en/stable/vistrails.html) is installed. This workflow is located under `digits/vistrails.vt`.
 
 You can replace it with the one we provide [here](digits_sklearn.vt) to see how the workflow can be extended to enhance the reproducibility experience. After opening it, replace the value of the *directory* parameter (from module *Directory*) with the full path of `digits/`, and then run the workflow by pressing *Execute*. You will see that the workflow was extended to provide visualization for the predictions and the confusion matrix.
+
+Packing from our demo VM
+------------------------
+
+If you are using our demo VM image, you can run the following:
+
+    $ vagrant ssh
+    $ workon digits-sklearn
+    $ cd reprozip-examples/digits-sklearn/
+    $ python 01_getdata.py
+    $ python 02_classifier.py
+    $ python 03_predict.py
+    $ python 04_confusion_matrix.py

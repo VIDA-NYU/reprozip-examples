@@ -32,13 +32,6 @@ Then, run each script with Python, in the following order:
 
 Alternatively, you can run the data analysis step (step 2) directly using the data we provide in this repository.
 
-If you are using the Vagrant machine provided by this repository, run the following:
-
-    $ vagrant ssh
-    $ workon bechdel-test
-    $ cd reprozip-examples/bechdel-test/
-    $ python bechdel.py
-
 ReproZip Package
 ----------------
 
@@ -56,3 +49,13 @@ The steps of the experiment can be reproduced as follows:
 Next, you can retrieve all the plots produced from the analysis as follows:
 
     $ reprounzip vagrant download bechdel/ --all
+
+Packing from our demo VM
+------------------------
+
+If you are using our demo VM image, you can run the following:
+
+    $ vagrant ssh
+    $ workon bechedl-test
+    $ cd reprozip-examples/bechdel-test/
+    $ python bechdel.py

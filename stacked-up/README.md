@@ -11,15 +11,6 @@ Implementation
 
 The website can be accessed [here](http://stackedup.org/), and the original implementation of the website is available [here](https://github.com/merbroussard/sdp_curricula). However, the ReproZip package that we provide is based on a [fork](https://github.com/fchirigati/sdp_curricula) of the original project implementation, which fixes some issues, such as missing dependencies.
 
-If you are using the Vagrant machine provided by this repository, do the following to run the example:
-
-    $ vagrant ssh
-    $ workon stacked-up
-    $ cd reprozip-examples/stacked-up/sdp_curricula/
-    $ ./runserver
-
-The app will be accessible on ``localhost:8000`` from any Web browser.
-
 ReproZip Package
 ----------------
 
@@ -71,3 +62,13 @@ Running the website in a cloud server is just a matter of provisioning and using
     $ docker ps
 
 where `AWS_ID` is the AWS Access Key ID and `AWS_KEY` is the AWS Secret Access Key.
+
+Packing from our demo VM
+------------------------
+
+If you are using our demo VM image, you can run the following:
+
+    $ vagrant ssh
+    $ workon stacked-up
+    $ cd reprozip-examples/stacked-up/sdp_curricula/
+    $ ./runserver

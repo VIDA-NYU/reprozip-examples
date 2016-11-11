@@ -16,14 +16,6 @@ The original experiment is composed by two steps:
 
 To run this experiment without ReproZip, you will need to first install [scikit-learn](http://scikit-learn.org/) and [OpenCV 3.0.0](http://opencv.org/), and then run each script with Python, in the aforementioned order.
 
-If you are using the Vagrant machine provided by this repository, run the following:
-
-    $ vagrant ssh
-    $ workon digits-sklearn-opencv
-    $ cd reprozip-examples/digits-sklearn-opencv/
-    $ python generateClassifier.py
-    $ python performRecognition.py
-
 ReproZip Package
 ----------------
 
@@ -50,3 +42,14 @@ You can also perform the same prediction with an [alternate input file](photo_2.
 And finally download the results as follows:
 
     $ reprounzip vagrant download digit-recognition/ output.jpg
+
+Packing from our demo VM
+------------------------
+
+If you are using our demo VM image, you can run the following:
+
+    $ vagrant ssh
+    $ workon digits-sklearn-opencv
+    $ cd reprozip-examples/digits-sklearn-opencv/
+    $ python generateClassifier.py
+    $ python performRecognition.py
