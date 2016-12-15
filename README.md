@@ -1,7 +1,7 @@
 ReproZip Examples
 =================
 
-This repository holds some examples and use cases from different domains that showcase [the ReproZip software packing tool](https://vida-nyu.github.io/reprozip/).
+This repository holds some examples and use cases from different domains that showcase [the ReproZip software packing tool](https://www.reprozip.org/).
 
 You'll find more information about each particular example in its associated README.
 
@@ -62,7 +62,7 @@ Instructions on how to run each of the examples in this machine are available in
 Other Useful Links
 ------------------
 
-* [Main Website](https://vida-nyu.github.io/reprozip/)
+* [Main Website](https://www.reprozip.org/)
 * [Documentation](http://reprozip.readthedocs.io/)
 * [GitHub Repository](https://github.com/ViDA-NYU/reprozip)
 * [Packing and Unpacking with ReproZip](https://www.youtube.com/watch?v=-zLPuwCHXo0): A YouTube video showing how to pack and unpack an experiment using ReproZip.
