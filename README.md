@@ -55,7 +55,7 @@ To startup the machine, make sure you have [Vagrant](https://www.vagrantup.com/)
 
     $ vagrant up
 
-Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the ``vb.gui = true`` line in the [Vagrantfile](Vagrantfile).
+Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the ``v.gui = true`` line in the [Vagrantfile](Vagrantfile).
 
 Instructions on how to run each of the examples in this machine are available in their respective pages.
 
