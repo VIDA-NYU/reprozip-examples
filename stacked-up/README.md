@@ -63,7 +63,7 @@ Running the website in a cloud server is just a matter of provisioning and using
 
 where `AWS_ID` is the AWS Access Key ID and `AWS_KEY` is the AWS Secret Access Key.
 
-Packing from our demo VM
+Packing From Our Demo VM
 ------------------------
 
 If you are using our demo VM image, you can run the following:

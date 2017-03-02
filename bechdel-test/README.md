@@ -50,7 +50,7 @@ Next, you can retrieve all the plots produced from the analysis as follows:
 
     $ reprounzip vagrant download bechdel/ --all
 
-Packing from our demo VM
+Packing From Our Demo VM
 ------------------------
 
 If you are using our demo VM image, you can run the following:

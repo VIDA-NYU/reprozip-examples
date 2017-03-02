@@ -43,7 +43,7 @@ And finally download the results as follows:
 
     $ reprounzip vagrant download digit-recognition/ output.jpg
 
-Packing from our demo VM
+Packing From Our Demo VM
 ------------------------
 
 If you are using our demo VM image, you can run the following:

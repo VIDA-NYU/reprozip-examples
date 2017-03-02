@@ -57,7 +57,7 @@ Recall that ReproZip automatically generates a [VisTrails](http://www.vistrails.
 
 You can replace it with the one we provide [here](digits_sklearn.vt) to see how the workflow can be extended to enhance the reproducibility experience. After opening it, replace the value of the *directory* parameter (from module *Directory*) with the full path of `digits/`, and then run the workflow by pressing *Execute*. You will see that the workflow was extended to provide visualization for the predictions and the confusion matrix.
 
-Packing from our demo VM
+Packing From Our Demo VM
 ------------------------
 
 If you are using our demo VM image, you can run the following:

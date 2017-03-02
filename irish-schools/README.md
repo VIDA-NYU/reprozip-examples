@@ -62,7 +62,7 @@ Next, you can retrieve all the plots in a single PDF produced from the analysis 
 
     $ reprounzip vagrant download national-schools/ --all
 
-Packing from our demo VM
+Packing From Our Demo VM
 ------------------------
 
 If you are using our demo VM image, you can run the following:

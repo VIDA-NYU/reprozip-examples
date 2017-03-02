@@ -34,11 +34,11 @@ You can then run BusVis as following:
 
 Please note that X11 forwarding through SSH is slow, so it may be slow to interact with the application. However, we have plans to fix this issue. For more information, see [ViDA-NYU/reprozip#189](https://github.com/ViDA-NYU/reprozip/issues/189).
 
-Packing from our demo VM
+Packing From Our Demo VM
 ------------------------
 
 If you are using our demo VM image, first, make sure you uncomment the ``vb.gui = true`` line in the [Vagrantfile](../Vagrantfile) before running ``vagrant up``. Log in to the machine (username: ``vagrant``, password: ``vagrant``) and run the following:
--
+
     $ startxfce4
 
 Then, open the Terminal and run:
