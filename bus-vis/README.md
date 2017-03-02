@@ -37,7 +37,7 @@ Please note that X11 forwarding through SSH is slow, so it may be slow to intera
 Packing From Our Demo VM
 ------------------------
 
-If you are using our demo VM image, first, make sure you uncomment the ``vb.gui = true`` line in the [Vagrantfile](../Vagrantfile) before running ``vagrant up``. Log in to the machine (username: ``vagrant``, password: ``vagrant``) and run the following:
+If you are using our demo VM image, first, make sure you uncomment the ``v.gui = true`` line in the [Vagrantfile](../Vagrantfile) before running ``vagrant up``. Log in to the machine (username: ``vagrant``, password: ``vagrant``) and run the following:
 
     $ startxfce4
 
