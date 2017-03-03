@@ -30,6 +30,7 @@ Examples
 
 *Reproducing the experiment with a different input*
 
+* [brain-segmentation](brain-segmentation): A Python script that extracts brain information and mask from an input b0 image using [dipy](http://nipy.org/dipy/).
 * [digits-sklearn-opencv](digits-sklearn-opencv): A similar experiment to [digits-sklearn](digits-sklearn), but using [the OpenCV library](http://opencv.org/) to extract the digits from a photograph before predicting their values.
 
 *Archiving and porting web applications*
@@ -45,6 +46,7 @@ Vagrant Machine
 This repository contains a [Vagrantfile](Vagrantfile) that automatically configures a machine with the following examples:
 
 * [bechdel-test](bechdel-test)
+* [brain-segmentation](brain-segmentation)
 * [bus-vis](bus-vis)
 * [digits-sklearn](digits-sklearn)
 * [digits-sklearn-opencv](digits-sklearn-opencv)

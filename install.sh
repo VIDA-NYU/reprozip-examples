@@ -100,6 +100,12 @@ sudo /etc/init.d/postgresql stop
 deactivate
 cd ../..
 
+echo '>> Installing brain-segmentation...' >&2
+wget -O- http://neuro.debian.net/lists/xenial.au.full | sudo tee /etc/apt/sources.list.d/neurodebian.sources.list
+sudo apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 0xA5D32F012649A5A9
+sudo apt-get -y update
+sudo apt-get -y install python-dipy
+
 echo '>> Installing reprozip...' >&2
 mkvirtualenv --system-site-packages reprozip
 pip install --upgrade reprozip reprounzip[all]
