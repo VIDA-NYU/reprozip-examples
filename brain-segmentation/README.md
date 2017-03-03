@@ -4,7 +4,7 @@ Brain Segmentation
 <div align="center"><img src="median_otsu.png" height="300"></div>
 <br/>
 
-This example shows how to extract brain information and mask from an input b0 image using [dipy](http://nipy.org/dipy/), a diffusion imaging analysis package.
+This example shows how to extract brain information and mask from an input b0 image using [dipy](http://nipy.org/dipy/), a diffusion imaging analysis package. This is based on an [example](http://nipy.org/dipy/examples_built/brain_extraction_dwi.html#example-brain-extraction-dwi) available at dipy's gallery.
 
 Original Experiment
 -------------------
