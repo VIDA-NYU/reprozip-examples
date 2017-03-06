@@ -106,9 +106,12 @@ sudo apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 0xA5D32F012649A5A9
 sudo apt-get -y update
 sudo apt-get -y install python-dipy
 
-echo '>> Installing reprozip...' >&2
+echo '>> Installing ReproZip...' >&2
 mkvirtualenv --system-site-packages reprozip
 pip install --upgrade reprozip reprounzip[all]
 mkdir $HOME/.bin
 ln -s $HOME/.virtualenvs/reprozip/bin/reprozip $HOME/.virtualenvs/reprozip/bin/reprounzip $HOME/.bin/
 echo -e 'PATH=$HOME/.bin:$PATH\nexport PATH' >>$HOME/.bash_profile
+
+echo '>> Installing Docker...' >&2
+sudo apt-get -y install docker.io
