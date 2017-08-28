@@ -5,7 +5,7 @@ export DEBIAN_FRONTEND=noninteractive
 echo '>> Updating information about packages...' >&2
 sudo apt-get -y update
 echo '>> Installing dependencies...' >&2
-sudo apt-get -y install vim git python python-dev python-pip python-virtualenv build-essential libsqlite3-dev virtualenvwrapper python-numpy libffi-dev
+sudo apt-get -y install vim git python python-dev python-pip python-virtualenv build-essential libsqlite3-dev virtualenvwrapper python-numpy libffi-dev curl
 
 echo '>> Removing default X server...' >&2
 sudo service xserver stop
@@ -46,6 +46,10 @@ mkvirtualenv --system-site-packages digits-sklearn-opencv
 pip install -r requirements.txt
 deactivate
 cd ..
+
+echo '>> Downloading MNIST dataset from OSF...' >&2
+mkdir -p $HOME/scikit_learn_data/mldata
+curl -Lo $HOME/scikit_learn_data/mldata/mnist-original.mat 'https://files.osf.io/v1/resources/8uxpv/providers/osfstorage/58488b3a594d9001fa6debdf?direct=true&action=download'
 
 echo '>> Installing dependencies for bechdel-test...' >&2
 cd bechdel-test/
