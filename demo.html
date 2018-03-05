@@ -3,15 +3,26 @@
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ReproZip examples shows how to use ReproZip, a tool that simplifies the process of creating reproducible experiments from command-line executions, a frequent task in computational science.">
+    <meta name="author" content="ViDA at NYU">
+    <link rel="icon" href="favicon.ico">
 
     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href=".bootstrap/css/paper/bootstrap.min.css">
-     <link rel="stylesheet" href=".bootstrap/css/paper/bootstrap.css">
-     <link rel="stylesheet" href=".bootstrap/css/paper/custom.css">
+    <link rel="stylesheet" href=".bootstrap/css/paper/bootstrap.min.css">
+    <link rel="stylesheet" href=".bootstrap/css/paper/bootstrap.css">
+ 
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href=".bootstrap/css/paper/custom.css">
 
     <title>ReproZip Examples</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
 
     <!-- Google Analytics -->
     <script>
@@ -25,11 +36,9 @@ ga('send', 'pageview');
   </head>
   <body>
 
-    <div class="container" id="content" role="main">
-
-      <!-- Menubar -->
+    <!-- Navbar -->
       <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
               <span class="sr-only">Toggle navigation</span>
@@ -37,8 +46,8 @@ ga('send', 'pageview');
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">ReproZip Examples</a>
-          </div>
+            <a class="navbar-brand" href="index.html"><img alt="ReproZip" src=".bootstrap/imgs/navbar-logo.png"></a>
+          </div><!--end navbar-header-->
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
             <ul class="nav navbar-nav">
@@ -71,8 +80,8 @@ ga('send', 'pageview');
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav><!-- End of Menubar -->
-
-      <div class="body-content"> <!--Body content-->
+   
+   <div class="container" id="content" role="main">
 
         <h3><a id="VagrantMachine"></a>Vagrant Machine</h3>
         <p>To make it easier to try out ReproZip to pack the examples presented here, we have created a Virtual Machine, which we also use for our own demos. Note that you don't need it to unpack, it just provides the original experiments with their dependencies so you can re-create those packages.</p>
