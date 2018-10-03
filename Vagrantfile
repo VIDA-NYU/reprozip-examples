@@ -19,7 +19,8 @@ Vagrant.configure('2') do |config|
 
     # Download pre-built image from OSF.io and run that
     config.vm.define "prebuilt", autostart: false do |m|
-        m.vm.box = "https://files.osf.io/v1/resources/8uxpv/providers/osfstorage/57ed7933b83f6901ee94b1dd?direct=true&action=download"
+        m.vm.box = "remram/ubuntu-1604-amd64-x"
+        m.vm.box_url = "https://files.osf.io/v1/resources/8uxpv/providers/osfstorage/57ed7933b83f6901ee94b1dd?direct=true&action=download"
 
         m.vm.network "forwarded_port", guest: 8000, host: 8000
     end
