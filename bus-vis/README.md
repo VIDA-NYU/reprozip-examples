@@ -32,8 +32,6 @@ You can then run BusVis as following:
     $ reprounzip vagrant setup BusVis.rpz busvis/
     $ reprounzip vagrant run --enable-x11 busvis/
 
-Please note that X11 forwarding through SSH is slow, so it may be slow to interact with the application. However, we have plans to fix this issue. For more information, see [ViDA-NYU/reprozip#189](https://github.com/ViDA-NYU/reprozip/issues/189).
-
 Packing From Our Demo VM
 ------------------------
 
