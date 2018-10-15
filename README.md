@@ -27,6 +27,7 @@ Examples
 *Packing interactive and GUI applications*
 
 * [bus-vis](bus-vis): A Java application for visualizing the Konstanz bus transportation system.
+* [mot](mot): A Python application to do multiple object tracking (MOT) in an input video.
 
 *Reproducing the experiment with a different input*
 
