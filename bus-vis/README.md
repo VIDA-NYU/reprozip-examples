@@ -32,7 +32,7 @@ You can run BusVis as follows:
 
 If you have a local X server (for example you are using Linux, or have installed [xquartz](https://www.xquartz.org/) for Mac or [Xming](https://sourceforge.net/projects/xming/) for Windows) you can use that instead of the VM's display via the following commands (note that rendering might be a bit slower):
 
-    $ reprounzip docker setup BusVis busvis/
+    $ reprounzip docker setup BusVis.rpz busvis/
     $ reprounzip docker run --enable-x11 busvis/
 
 More information on packing and unpacking graphical applications can be found [here](http://reprozip.readthedocs.io/en/latest/faq.html#can-reprozip-pack-graphical-tools).
