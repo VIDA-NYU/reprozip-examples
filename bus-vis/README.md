@@ -35,7 +35,7 @@ If you have a local X server (for example you are using Linux, or have installed
     $ reprounzip docker setup BusVis.rpz busvis/
     $ reprounzip docker run --enable-x11 busvis/
 
-More information on packing and unpacking graphical applications can be found [here](http://reprozip.readthedocs.io/en/latest/faq.html#can-reprozip-pack-graphical-tools).
+More information on packing and unpacking graphical applications can be found [here](https://docs.reprozip.org/en/1.0.x/faq.html#can-reprozip-pack-graphical-tools).
 
 Packing From Our Demo VM
 ------------------------

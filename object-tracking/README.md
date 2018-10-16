@@ -38,7 +38,7 @@ If you have a local X server (for example, if you are using Linux, or have insta
     $ reprounzip docker setup object-tracking.rpz object-tracking/
     $ reprounzip docker run --enable-x11 object-tracking/
 
- More information on packing and unpacking graphical applications can be found [here](http://reprozip.readthedocs.io/en/latest/faq.html#can-reprozip-pack-graphical-tools).
+ More information on packing and unpacking graphical applications can be found [here](https://docs.reprozip.org/en/1.0.x/faq.html#can-reprozip-pack-graphical-tools).
 
 Packing From Our Demo VM
 ------------------------

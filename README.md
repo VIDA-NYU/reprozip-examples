@@ -39,7 +39,7 @@ Examples
 * [django-blog](django-blog): A simple website built with Django that displays a list of blog posts and allows the admin to edit or post. Despite its simplicity, it represents a realistic small web application using a database (SQLite3).
 * [stacked-up](stacked-up): A website called [Stacked Up](http://stackedup.org/), also built with Django, to explore the textbook inventory of Philadelphia public schools. All the data is stored in a PostgreSQL database.
 
-Instructions for reproducing the examples use the [vagrant](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine) and the [docker](http://reprozip.readthedocs.io/en/stable/unpacking.html#the-docker-unpacker-building-a-docker-container) unpackers. However, any of the [available unpackers](http://reprozip.readthedocs.io/en/stable/unpacking.html#unpackers) can be used.
+Instructions for reproducing the examples use the [vagrant](https://docs.reprozip.org/en/1.0.x/unpacking.html#the-vagrant-unpacker-building-a-virtual-machine) and the [docker](https://docs.reprozip.org/en/1.0.x/unpacking.html#the-docker-unpacker-building-a-docker-container) unpackers. However, any of the [available unpackers](https://docs.reprozip.org/en/1.0.x/unpacking.html#unpackers) can be used.
 
 Vagrant Machine
 ---------------
@@ -66,7 +66,7 @@ Other Useful Links
 ------------------
 
 * [Main Website](https://www.reprozip.org/)
-* [Documentation](http://reprozip.readthedocs.io/)
+* [Documentation](https://docs.reprozip.org/)
 * [GitHub Repository](https://github.com/ViDA-NYU/reprozip)
 * [Packing and Unpacking with ReproZip](https://www.youtube.com/watch?v=-zLPuwCHXo0): A YouTube video showing how to pack and unpack an experiment using ReproZip.
 

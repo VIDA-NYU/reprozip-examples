@@ -34,7 +34,7 @@ and this script was then traced by ReproZip:
 
 This guarantees that both the database and the website are properly identified and traced. Please note the use of `trap` to correctly handle Unix signals.
 
-In addition, in the [configuration file](http://reprozip.readthedocs.io/en/1.0.x/packing.html#editing-the-configuration-file), all the database and web application files were included under the ``additional_patterns`` section:
+In addition, in the [configuration file](https://docs.reprozip.org/en/1.0.x/packing.html#editing-the-configuration-file), all the database and web application files were included under the ``additional_patterns`` section:
 
     additional_patterns:
       - /var/lib/postgresql/9.1/main/**  # all the database files
