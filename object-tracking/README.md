@@ -28,12 +28,17 @@ The ReproZip package is available [here](https://osf.io/jxhgu/) (52 MB).
 How to Reproduce
 ----------------
 
-You will need a local X server for display. For instance, if you are running on Mac OS X, you can use [XQuartz](https://www.xquartz.org/); if you are running on Windows, take a look at [Xming](https://sourceforge.net/projects/xming/). More information on packing and unpacking graphical applications can be found [here](http://reprozip.readthedocs.io/en/latest/faq.html#can-reprozip-pack-graphical-tools).
+You can reproduce the application as follows:
 
-You can then run the experiment as following:
+    $ reprounzip vagrant setup --use-gui object-tracking.rpz object-tracking/
+    $ reprounzip vagrant run object-tracking/
 
-    $ reprounzip vagrant setup object-tracking.rpz object-tracking/
-    $ reprounzip vagrant run --enable-x11 object-tracking/
+If you have a local X server (for example, if you are using Linux, or have installed [xquartz](https://www.xquartz.org/) for Mac or [Xming](https://sourceforge.net/projects/xming/) for Windows), you can use that instead of the VM's display via the following commands (note that rendering might be a bit slower):
+
+    $ reprounzip docker setup object-tracking.rpz object-tracking/
+    $ reprounzip docker run --enable-x11 object-tracking/
+
+ More information on packing and unpacking graphical applications can be found [here](http://reprozip.readthedocs.io/en/latest/faq.html#can-reprozip-pack-graphical-tools).
 
 Packing From Our Demo VM
 ------------------------
@@ -45,6 +50,6 @@ If you are using our demo VM image, first, make sure you uncomment the ``v.gui =
 Then, open the Terminal and run:
 
     $ vagrant ssh
-    $ workon mobject-tracking
+    $ workon object-tracking
     $ cd reprozip-examples/object-tracking/
     $ python multipleObjectTracking.py
