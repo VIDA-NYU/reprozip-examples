@@ -47,9 +47,9 @@ pip install -r requirements.txt
 deactivate
 cd ..
 
-echo '>> Installing dependencies for mot...' >&2
-cd mot/
-mkvirtualenv --system-site-packages mot
+echo '>> Installing dependencies for object-tracking...' >&2
+cd object-tracking/
+mkvirtualenv --system-site-packages object-tracking
 pip install -r requirements.txt
 deactivate
 cd ..

@@ -32,8 +32,8 @@ You will need a local X server for display. For instance, if you are running on 
 
 You can then run the experiment as following:
 
-    $ reprounzip vagrant setup mot.rpz mot/
-    $ reprounzip vagrant run --enable-x11 mot/
+    $ reprounzip vagrant setup object-tracking.rpz object-tracking/
+    $ reprounzip vagrant run --enable-x11 object-tracking/
 
 Packing From Our Demo VM
 ------------------------
@@ -45,6 +45,6 @@ If you are using our demo VM image, first, make sure you uncomment the ``v.gui =
 Then, open the Terminal and run:
 
     $ vagrant ssh
-    $ workon mot
-    $ cd reprozip-examples/mot/
+    $ workon mobject-tracking
+    $ cd reprozip-examples/object-tracking/
     $ python multipleObjectTracking.py
