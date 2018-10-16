@@ -46,9 +46,9 @@ How to Reproduce
 The web application can be started as follows:
 
     $ reprounzip docker setup stacked-up.rpz stacked-up/
-    $ reprounzip docker run stacked-up/ --docker-option=-p --docker-option=8000:8000
+    $ reprounzip docker run stacked-up/ --expose-port=8000
 
-Note that you need to pass `-p 8000:8000` to Docker for it to expose the port from the container. You can then access your local Stacked Up application at `http://IP:8000/`, where `IP` is your docker-machine's IP address (which can be retrieved by running `docker-machine ip`).
+You can then access your local Stacked Up application at `http://localhost:8000/`. If you are using docker-machine, replace `localhost` by the IP address of the docker-machine VM.
 
 How to Run in the Cloud
 -----------------------
