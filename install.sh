@@ -47,6 +47,13 @@ pip install -r requirements.txt
 deactivate
 cd ..
 
+echo '>> Installing dependencies for object-tracking...' >&2
+cd object-tracking/
+mkvirtualenv --system-site-packages object-tracking
+pip install -r requirements.txt
+deactivate
+cd ..
+
 echo '>> Downloading MNIST dataset from OSF...' >&2
 mkdir -p $HOME/scikit_learn_data/mldata
 curl -Lo $HOME/scikit_learn_data/mldata/mnist-original.mat 'https://files.osf.io/v1/resources/8uxpv/providers/osfstorage/58488b3a594d9001fa6debdf?direct=true&action=download'
