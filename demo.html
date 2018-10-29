@@ -1,89 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ReproZip examples shows how to use ReproZip, a tool that simplifies the process of creating reproducible experiments from command-line executions, a frequent task in computational science.">
+    <meta name="description" content="ReproZip is a tool that simplifies the process of creating reproducible experiments from command-line executions, a frequent task in computational science.">
     <meta name="author" content="ViDA at NYU">
     <link rel="icon" href="favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href=".bootstrap/css/paper/bootstrap.min.css">
-    <link rel="stylesheet" href=".bootstrap/css/paper/bootstrap.css">
+    <title>ReproZip Demo VM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href=".bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href=".bootstrap/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href=".bootstrap/css/paper/custom.css">
-
-    <title>ReproZip Examples</title>
-
+    <link href=".bootstrap/css/custom.css" rel="stylesheet">
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src=".bootstrap/js/html5shiv.min.js"></script>
+      <script src=".bootstrap/js/respond.min.js"></script>
     <![endif]-->
 
     <!-- Google Analytics -->
     <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-54723441-3', 'auto');
-ga('send', 'pageview');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54723441-1', 'auto');
+    ga('send', 'pageview');
     </script>
   </head>
+
   <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse">
+    
+    <nav class="navbar navbar-expand-md navbar-inverse bg-inverse">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><img alt="ReproZip" src=".bootstrap/imgs/navbar-logo.png"></a>
-        </div><!--end navbar-header-->
+       <a class="navbar-brand" href="index.html"><img alt="ReproZip" src=".bootstrap/imgs/navbar-logo.png"></a>
+  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="demo.html"><span class="sr-only">(current)</span>Using Our Demo VM</a></li>
+		    <!--LINKS DROP DOWN-->
+		    <li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ReproZip Links <i class="fas fa-external-link-alt"></i></a>
+		      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://reprozip.org">ReproZip Site</a>
+            <a class="dropdown-item" href="https://docs.reprozip.org/">Docs</a>
+			      <a class="dropdown-item" href="https://github.com/ViDA-NYU/reprozip">GitHub Project</a>
+		      </div>
+		    </li><!--end link dropdown-->
+		  </ul><!--end left navbar-->
+			<!-- right navbar -->
+			<ul class="nav navbar-nav ml-auto">
+			  <li class="nav-item"><a class="nav-link fonta" href="https://github.com/ViDA-NYU/reprozip-examples"><i class="fab fa-github-square"></i></a></li>
+        <li class="nav-item"><a class="nav-link fonta" href="mailto:users@reprozip.org"><i class="fas fa-envelope-square"></i></a></li>
+	    </ul><!--end right navbar-->
+	  </div><!--end collapse-->
+    </div><!--end container-->
+    </nav><!--end nav-->
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Using Our Demo VM</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <!--dropdown-->
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://www.reprozip.org/">Main Website</a></li>
-                <li><a href="https://docs.reprozip.org/">Documentation</a></li>
-                <li><a href="https://github.com/ViDA-NYU/reprozip">GitHub Repository</a></li>
-                <li><a href="https://www.youtube.com/watch?v=-zLPuwCHXo0">YouTube Demo Video</a></li>
-              </ul>
-            </li><!--end dropdown-->
-
-            <!--dropdown-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team Members<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://remirampin.com/">Rémi Rampin</a></li>
-                <li><a href="http://fchirigati.com/">Fernando Chirigati</a></li>
-                <li><a href="https://vickysteeves.com/">Vicky Steeves</a></li>
-                <li><a href="https://vgc.poly.edu/~juliana/">Juliana Freire</a></li>
-                <li><a href="http://cs.nyu.edu/shasha/">Dennis Shasha</a></li>
-              </ul>
-            </li><!--end dropdown-->
-          </ul>
-
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- End of Menubar -->
-
-    <div class="container" id="content" role="main">
-
-      <h3><a id="VagrantMachine"></a>Vagrant Machine</h3>
+   <main role="main" class="container">
+    
+       <h3><a id="VagrantMachine"></a>Vagrant Machine</h3>
       <p>To make it easier to try out ReproZip to pack the examples presented here, we have created a Virtual Machine, which we also use for our own demos. Note that you don't need it to unpack, it just provides the original experiments with their dependencies so you can re-create those packages.</p>
       <p>This VM is also created using a <a href="https://github.com/ViDA-NYU/reprozip-examples/blob/master/Vagrantfile">Vagrantfile</a> that automatically configures a machine, install the dependencies, and sets up the following examples:</p>
       <ul>
@@ -97,27 +80,29 @@ ga('send', 'pageview');
       </ul>
 
       <p>To startup the machine, make sure you have <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> installed, and then run the following:</p>
-      <pre><code>$ vagrant up prebuilt</code></pre>
+     
+     <pre><code>$ vagrant up prebuilt</code></pre>
+     
       <p>Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the <code>v.gui = true</code> line in the <a href="https://github.com/ViDA-NYU/reprozip-examples/blob/master/Vagrantfile">Vagrantfile</a>.</p>
       <p>You can then get a shell in the virtual machine using <code>vagrant ssh</code>.</p>
       <p>Instructions on how to run each of the examples in this machine are available in their respective pages.</p>
+    
+     <hr/>
+     
+    </main>
 
-    </div>
-    <!-- end body content -->
-
-    <!-- begin footer -->
-    <footer id="footer">
-      <div align="center">
-        <hr/>
-        <p>Any questions or comments can be directed to the <a href="https://vgc.poly.edu/mailman/listinfo/reprozip-users">ReproZip mailing list</a> or on <a href="https://github.com/ViDA-NYU/reprozip-examples">GitHub</a> via an issue.</p>
-      </div>
+    <footer class="container">
+      <p>ReproZip is under development at <a href="https://engineering.nyu.edu/" rel="noopener">NYU</a> by the <a href="https://vida.engineering.nyu.edu/"><abbr title="Visualization and Data Analytics">ViDA group</abbr></a>. Any questions or comments can be directed to the <a href="https://vgc.poly.edu/mailman/listinfo/reprozip-users">ReproZip mailing list</a> or on <a href="https://github.com/ViDA-NYU/reprozip-examples">GitHub</a> via an issue.</p>
     </footer>
-    <!-- end footer -->
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src=".bootstrap/js/jquery.min.js"></script>
     <script src=".bootstrap/js/bootstrap.min.js"></script>
-    <!-- end scripts -->
-
+    <script src=".bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src=".bootstrap/js/respond.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src=".bootstrap/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

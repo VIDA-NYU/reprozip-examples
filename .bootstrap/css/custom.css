@@ -1,0 +1,52 @@
+@import url('../webfonts/Montserrat');
+
+/* change font for site */
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* increase font size of paragraph content */
+body p {
+  font-size:1.2em;
+}
+
+/* increase font-size of lists */
+main li {
+  font-size:1.2em;
+}
+
+/* add space between navbar and content */
+main {
+  padding-top: 2rem;
+}
+
+/* change the navbar background color */
+.navbar-inverse {
+    background-color: #57068c;
+}
+
+/* change the link color and font in navbar*/
+.navbar-inverse .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size:1.4em;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* change the color of active or hovered links in navbar */
+.navbar-inverse .nav-item.active .nav-link,
+.navbar-inverse .nav-item:focus .nav-link,
+.navbar-inverse .nav-item:hover .nav-link {
+    background-color: blue;
+}
+
+/* change background of active links in navbar */
+.nav-item.active {
+	background-color: blue;
+}
+
+/* change background of primary buttons (e.g. reproduce buttons) */
+.btn-primary {
+  background: #57068c !important;
+  font-size:1.2em;
+}
