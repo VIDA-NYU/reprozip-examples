@@ -26,7 +26,7 @@ How to Reproduce
 
 The experiment can be reproduced as follows:
 
-    $ reprounzip vagrant setup digitRecognition.rpz digit-recognition/
+    $ reprounzip vagrant setup digits_sklearn_opencv.rpz digit-recognition/
     $ reprounzip vagrant run digit-recognition/ classification
     $ reprounzip vagrant run digit-recognition/ prediction
 
