@@ -14,7 +14,7 @@ The website can be accessed [here](http://stackedup.org/), and the original impl
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/nm283/) (58 MB).
+The ReproZip package is available [here](https://osf.io/nm283/download) (58 MB).
 
 In the original implementation, to locally run the web application, one needs to run the following:
 
