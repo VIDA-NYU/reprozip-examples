@@ -20,7 +20,7 @@ The application can be run as following:
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/kaxse/) (69 MB).
+The ReproZip package is available [here](https://osf.io/kaxse/download) (69 MB).
 
 How to Reproduce
 ----------------

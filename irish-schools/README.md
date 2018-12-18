@@ -20,7 +20,7 @@ And then simply run:
 
     $ Rscript NationalSchools_Wolf_2016.R
 
-However, if we look more closely at the [ReproZip package](https://osf.io/wfvqr/), we see many more dependencies:
+However, if we look more closely at the [ReproZip package](https://osf.io/wfvqr/download), we see many more dependencies:
 
     $ reprounzip info national-schools.rpz
 

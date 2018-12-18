@@ -32,7 +32,7 @@ To run this experiment without ReproZip, you will need to install [scikit-learn]
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/j6w3b/) (20.0 MB).
+The ReproZip package is available [here](https://osf.io/j6w3b/download) (20.0 MB).
 
 How to Reproduce
 ----------------

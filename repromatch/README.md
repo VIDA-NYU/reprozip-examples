@@ -9,7 +9,7 @@ ReproMatch
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/scnmb/) (109 MB).
+The ReproZip package is available [here](https://osf.io/scnmb/download) (109 MB).
 
 How to Reproduce
 ----------------

@@ -35,7 +35,7 @@ Alternatively, you can run the data analysis step (step 2) directly using the da
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/q7sdy/) (142 MB).
+The ReproZip package is available [here](https://osf.io/q7sdy/download) (142 MB).
 
 How to Reproduce
 ----------------

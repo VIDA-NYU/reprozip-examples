@@ -19,7 +19,7 @@ To run this experiment without ReproZip, you will need to first install [scikit-
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/5ztp2/) (79.0 MB).
+The ReproZip package is available [here](https://osf.io/5ztp2/download) (79.0 MB).
 
 How to Reproduce
 ----------------

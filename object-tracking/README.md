@@ -23,7 +23,7 @@ Then, run the following script:
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/jxhgu/) (52 MB).
+The ReproZip package is available [here](https://osf.io/jxhgu/download) (52 MB).
 
 How to Reproduce
 ----------------

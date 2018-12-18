@@ -16,7 +16,7 @@ To run this experiment without ReproZip, you will need to first install [dipy](h
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/8cx46/) (46.5 MB).
+The ReproZip package is available [here](https://osf.io/8cx46/download) (46.5 MB).
 
 How to Reproduce
 ----------------
