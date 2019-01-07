@@ -48,5 +48,5 @@ main {
 /* change background of primary buttons (e.g. reproduce buttons) */
 .btn-primary {
   background: #57068c !important;
-  font-size:1.2em;
+	font-size:1.2em;
 }
