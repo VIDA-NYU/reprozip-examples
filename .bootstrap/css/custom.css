@@ -1,8 +1,8 @@
-@import url('../webfonts/Montserrat');
+@import url('../webfonts/Montserrat/Montserrat-Regular.ttf');
 
 /* change font for site */
 body {
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* increase font size of paragraph content */
@@ -29,7 +29,6 @@ main {
 .navbar-inverse .navbar-nav .nav-link {
   color: #ffffff;
   font-size:1.4em;
-  font-weight:bold;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -48,5 +47,5 @@ main {
 /* change background of primary buttons (e.g. reproduce buttons) */
 .btn-primary {
   background: #57068c !important;
-	font-size:1.2em;
+  font-size:1.2em;
 }
