@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ReproZip is a tool that simplifies the process of creating reproducible experiments from command-line executions, a frequent task in computational science.">
-    <meta name="author" content="ViDA at NYU">
+    <meta name="author" content="VIDA at NYU">
     <link rel="icon" href="favicon.ico">
 
     <title>ReproZip Demo VM</title>
@@ -51,13 +51,13 @@
 		      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="https://www.reprozip.org/">ReproZip Site</a>
             <a class="dropdown-item" href="https://docs.reprozip.org/">Docs</a>
-			      <a class="dropdown-item" href="https://github.com/ViDA-NYU/reprozip">GitHub Project</a>
+			      <a class="dropdown-item" href="https://github.com/VIDA-NYU/reprozip">GitHub Project</a>
 		      </div>
 		    </li><!--end link dropdown-->
 		  </ul><!--end left navbar-->
 			<!-- right navbar -->
 			<ul class="nav navbar-nav ml-auto">
-			  <li class="nav-item"><a class="nav-link fonta" href="https://github.com/ViDA-NYU/reprozip-examples"><i class="fab fa-github-square"></i></a></li>
+			  <li class="nav-item"><a class="nav-link fonta" href="https://github.com/VIDA-NYU/reprozip-examples"><i class="fab fa-github-square"></i></a></li>
 			  <li class="nav-item"><a class="nav-link" href="https://twitter.com/search?q=ReproZip"><i class="fab fa-twitter-square"></i></a></li>
         <li class="nav-item"><a class="nav-link fonta" href="mailto:users@reprozip.org"><i class="fas fa-envelope-square"></i></a></li>
 	    </ul><!--end right navbar-->
@@ -69,22 +69,22 @@
     
        <h3><a id="VagrantMachine"></a>Vagrant Machine</h3>
       <p>To make it easier to try out ReproZip to pack the examples presented here, we have created a Virtual Machine, which we also use for our own demos. Note that you don't need it to unpack, it just provides the original experiments with their dependencies so you can re-create those packages.</p>
-      <p>This VM is also created using a <a href="https://github.com/ViDA-NYU/reprozip-examples/blob/master/Vagrantfile">Vagrantfile</a> that automatically configures a machine, install the dependencies, and sets up the following examples:</p>
+      <p>This VM is also created using a <a href="https://github.com/VIDA-NYU/reprozip-examples/blob/master/Vagrantfile">Vagrantfile</a> that automatically configures a machine, install the dependencies, and sets up the following examples:</p>
       <ul>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/bechdel-test">bechdel-test</a></li>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/brain-segmentation">brain-segmentation</a></li>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/bus-vis">bus-vis</a></li>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/digits-sklearn">digits-sklearn</a></li>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/digits-sklearn-opencv">digits-sklearn-opencv</a></li>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/irish-schools">irish-schools</a></li>
-        <li><a href="https://github.com/ViDA-NYU/reprozip-examples/tree/master/stacked-up">stacked-up</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/bechdel-test">bechdel-test</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/brain-segmentation">brain-segmentation</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/bus-vis">bus-vis</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/digits-sklearn">digits-sklearn</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/digits-sklearn-opencv">digits-sklearn-opencv</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/irish-schools">irish-schools</a></li>
+        <li><a href="https://github.com/VIDA-NYU/reprozip-examples/tree/master/stacked-up">stacked-up</a></li>
       </ul>
 
       <p>To startup the machine, make sure you have <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> installed, and then run the following:</p>
      
      <pre><code>$ vagrant up prebuilt</code></pre>
      
-      <p>Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the <code>v.gui = true</code> line in the <a href="https://github.com/ViDA-NYU/reprozip-examples/blob/master/Vagrantfile">Vagrantfile</a>.</p>
+      <p>Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the <code>v.gui = true</code> line in the <a href="https://github.com/VIDA-NYU/reprozip-examples/blob/master/Vagrantfile">Vagrantfile</a>.</p>
       <p>You can then get a shell in the virtual machine using <code>vagrant ssh</code>.</p>
       <p>Instructions on how to run each of the examples in this machine are available in their respective pages.</p>
     
@@ -93,7 +93,7 @@
     </main>
 
     <footer class="container">
-      <p>ReproZip is under development at <a href="https://engineering.nyu.edu/" rel="noopener">NYU</a> by the <a href="https://vida.engineering.nyu.edu/"><abbr title="Visualization and Data Analytics">ViDA group</abbr></a>. Any questions or comments can be directed to the <a href="https://vgc.poly.edu/mailman/listinfo/reprozip-users">ReproZip mailing list</a> or on <a href="https://github.com/ViDA-NYU/reprozip-examples">GitHub</a> via an issue.</p>
+      <p>ReproZip is under development at <a href="https://engineering.nyu.edu/" rel="noopener">NYU</a> by the <a href="https://vida.engineering.nyu.edu/"><abbr title="Visualization, Imaging, and Data Analytics">VIDA group</abbr></a>. Any questions or comments can be directed to the <a href="https://vgc.poly.edu/mailman/listinfo/reprozip-users">ReproZip mailing list</a> or on <a href="https://github.com/VIDA-NYU/reprozip-examples">GitHub</a> via an issue.</p>
     </footer>
 
     <!-- Bootstrap core JavaScript

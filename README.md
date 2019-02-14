@@ -68,7 +68,7 @@ Other Useful Links
 
 * [Main Website](https://www.reprozip.org/)
 * [Documentation](https://docs.reprozip.org/)
-* [GitHub Repository](https://github.com/ViDA-NYU/reprozip)
+* [GitHub Repository](https://github.com/VIDA-NYU/reprozip)
 * [Packing and Unpacking with ReproZip](https://www.youtube.com/watch?v=-zLPuwCHXo0): A YouTube video showing how to pack and unpack an experiment using ReproZip.
 
 Team
