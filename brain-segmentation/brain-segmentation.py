@@ -1,7 +1,9 @@
 import pickle
 import numpy as np
-import nibabel as nib
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import nibabel as nib
 from dipy.segment.mask import median_otsu
 from dipy.core.histeq import histeq
 
