@@ -43,7 +43,7 @@ scales, scales.rdb, scales.rdx, scales.so, sysdata.rdx
 ReproZip Package
 ----------------
 
-The ReproZip package is available [here](https://osf.io/wfvqr/).
+The ReproZip package is available [here](https://osf.io/wfvqr/download) (16 MB).
 
 Pack information:
 * Compressed size: 16.43 MB
