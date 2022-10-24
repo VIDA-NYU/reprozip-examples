@@ -57,7 +57,7 @@ This repository contains a [Vagrantfile](Vagrantfile) that automatically configu
 
 To startup the machine, make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed, and then run the following:
 
-    $ vagrant up
+    $ vagrant up --provider virtualbox
 
 Note that this will take some time for the first time, since all the dependencies will need to be properly installed. By default, the machine starts in headless mode (no UI visible on the host machine). To boot it with a GUI, uncomment the ``v.gui = true`` line in the [Vagrantfile](Vagrantfile).
 
